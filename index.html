@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment 2</title>
-    
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
+    <title>Text Align and decoration</title>
+       <style>
+        #box1{
+          height: 100px;
+          width: 100px;
+          background-color: yellowgreen;
+          /* text-align: center; */
+          /* text-align: left; */
+          text-align: right;
         }
-      #bar{
-        background-color: aquamarine;
-        /* Here 0.4 is opacity(transparency) */
-        color: rgba(103,18,18,0,0.4);
-      }
-      main{
-        height: 300px;
-        background-color: blanchedalmond;
-      }
-      #product{
-          width: 500px;
-          height: 250px;
-          /* background-image: url(jeans.jpeg);
-          background-repeat: no-repeat;
-          background-position: center;
-          background-attachment: none; */
-          /* Below is background shorthand property  */
-          background: green url(jeans.jpeg) no-repeat none center;
-      }
-    </style>    
+        #head1{
+          text-decoration: underline;
+        }
+        #head2{
+          text-decoration: overline;
+        }
+        #head3{
+          text-decoration: line-through;
+        }
+       </style>
 </head>
 <body>
-    <header>
-
-        <div id="bar">This is my nav bar</div>
-    </header>
-
-    <main>
-       <div id="product">Product 1</div>
-    </main>
+    <div id="box1">Box</div><hr>
+    <h3 id="head1">text decoration</h3><hr>
+    <h3 id="head2">Another text</h3><hr>
+    <h3 id="head3">One more</h3>
 </body>
 </html>

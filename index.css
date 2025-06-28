@@ -15,3 +15,25 @@ header{
     background-color: palegreen;
     height: 30px;
 }
+#second{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: violet;
+    display: inline-block;
+}
+
+#container{
+    border: 3px solid black;
+    margin: 5px;
+}
+#box4{
+    position: fixed;
+    right: 10px;
+}

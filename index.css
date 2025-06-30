@@ -12,3 +12,13 @@ nav{
   padding-top: 5px;
 }
 header{background-color: moccasin;}
+img{
+  height: 100px;
+}
+#image_container{
+  border: 2px solid black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

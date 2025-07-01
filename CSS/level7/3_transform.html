@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Transform</title>
+  <style>
+    .box{
+      height: 50px;
+      width: 50px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: plum;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      
+      transition: all 1s ease-in;
+      /* transform: rotate(45deg); */
+    }
+
+    .box:hover{
+      /* transform: rotate(270deg); */
+      
+      /* You can also rotate on x,y and z axis  */
+      transform: rotateX(180deg);
+    }
+  </style>
+</head>
+<body>
+   <div class="box">Box</div>
+</body>
+</html>

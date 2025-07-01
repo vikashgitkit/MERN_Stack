@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CSS Transform: skew</title>
+  <title>CSS Animation</title>
   <style>
     .box{
       height: 70px;
@@ -10,19 +10,23 @@
       border-radius: 5px;
       background-color: plum;
       position: relative;
-      top: 50px;
-      left: 50px;
+      top: 10px;
+      left: 10px;
       
-      transition: all 1s ease-in;
+      animation-name: ghumakkad;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      
     }
-
-    .box:hover{
-      transform: skew(90deg);
-
-    }
+     @keyframes ghumakkad {
+      from {left: 10px;}
+      to{left: 200px}
+     }
+   
   </style>
 </head>
 <body>
-   <div class="box">Skew</div>
+   <div class="box">Animate</div>
 </body>
 </html>

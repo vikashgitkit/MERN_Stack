@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
 }
 header{
     display: flex;
@@ -37,11 +38,17 @@ header{
     font-size: 10px;
 }
 .search_bar{
-
+    height: 40px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
 }
 .search_icon{
-
+    height: 20px;
 }
 .search_input{
-    
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
 }

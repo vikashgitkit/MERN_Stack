@@ -5,6 +5,12 @@
 }
 header{
     display: flex;
-    background-color: #ffffff;
+    background-color: peachpuff;
     height: 80px;
+}
+.myntra_home{
+    height: 45px;
+}
+.logo_container{
+    margin-left: 2%;
 }

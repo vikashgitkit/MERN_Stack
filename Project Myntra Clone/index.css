@@ -44,7 +44,11 @@ header{
     align-items: center;
 }
 .search_icon{
+    box-sizing: content-box;
     height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
 }
 .search_input{
     color: #696e79;

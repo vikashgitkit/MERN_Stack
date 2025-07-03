@@ -126,3 +126,8 @@ header{
     font-size: 14px;
     margin-bottom: 25px;
 }
+.copyright{
+    color: #94969f;
+    text-align: end;
+    padding: 15px;
+}

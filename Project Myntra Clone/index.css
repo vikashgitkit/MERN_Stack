@@ -114,3 +114,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}

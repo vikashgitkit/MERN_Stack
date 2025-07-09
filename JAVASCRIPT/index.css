@@ -9,5 +9,7 @@
 }
 
 .wish-btn{
-
+    padding: 5px 35px;
+    border: 2px solid black;
+    border-radius: 10px;
 }

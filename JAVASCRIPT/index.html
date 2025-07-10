@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-      <button class="bag-btn" onclick="alert('Added to Bag')">Add to bag</button>
+      <button class="bag-btn" onclick="cartQuantity += 1; 
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`" >Add to bag</button>
       <button class="wish-btn" onclick="alert('Wishlist is added')">Move To Wishlist</button>
        <button class="bag-btn" onclick="alert('Added to Bag')">Add 1+1 Sale Item</button><br>
 
@@ -13,7 +14,7 @@
 
       <script>
         let cartQuantity = 5;
-        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`
       </script>
 </body>
 </html>

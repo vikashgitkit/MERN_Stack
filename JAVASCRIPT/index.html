@@ -7,6 +7,13 @@
 <body>
       <button class="bag-btn" onclick="alert('Added to Bag')">Add to bag</button>
       <button class="wish-btn" onclick="alert('Wishlist is added')">Move To Wishlist</button>
-       <button class="bag-btn" onclick="alert('Added to Bag')">Add 1+1 Sale Item</button>
+       <button class="bag-btn" onclick="alert('Added to Bag')">Add 1+1 Sale Item</button><br>
+
+      <h1 id="cart-summary"></h1>
+
+      <script>
+        let cartQuantity = 5;
+        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity}`
+      </script>
 </body>
 </html>

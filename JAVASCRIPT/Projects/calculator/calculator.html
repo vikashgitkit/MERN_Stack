@@ -6,10 +6,10 @@
   </head>
   <body>
     <div id="calculator">
-      <input type="text" id="display" readonly />
+      <input type="text" id="display" readonly >
       <div class="btn-container">
         <button class="btn">C</button>
-        <button class="btn">1</button>
+        <button class="btn" onclick="currentDisplay = currentDisplay + '1'; document.querySelector('#display').value = currentDisplay;">1</button>
         <button class="btn">2</button>
 
          <button class="btn">+</button>

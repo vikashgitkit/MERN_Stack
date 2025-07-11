@@ -8,7 +8,7 @@
     <div id="calculator">
       <input type="text" id="display" readonly >
       <div class="btn-container">
-        <button class="btn">C</button>
+        <button class="btn" onclick="currentDisplay = ''; document.querySelector('#display').value = currentDisplay;">C</button>
         <button class="btn" onclick="currentDisplay = currentDisplay + '1'; document.querySelector('#display').value = currentDisplay;">1</button>
         <button class="btn" onclick="currentDisplay = currentDisplay + '2'; document.querySelector('#display').value = currentDisplay;">2</button>
 
@@ -25,7 +25,7 @@
         <button class="btn" onclick="currentDisplay = currentDisplay + '8'; document.querySelector('#display').value = currentDisplay;">8</button>
 
          <button class="btn" onclick="currentDisplay = currentDisplay + '/'; document.querySelector('#display').value = currentDisplay;">/</button>
-        <button class="btn" >=</button>
+        <button class="btn" onclick=" let result = eval(currentDisplay); currentDisplay=result; document.querySelector('#display').value = currentDisplay;">=</button>
         <button class="btn" onclick="currentDisplay = currentDisplay + '9'; document.querySelector('#display').value = currentDisplay;">9</button>
 
          <button class="btn" onclick="currentDisplay = currentDisplay + '0'; document.querySelector('#display').value = currentDisplay;">0</button>

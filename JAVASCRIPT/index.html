@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Assignment 2 Myntra Bag</title>
-    <link rel="stylesheet" href="./index.css">
+  <title>Practise Exercise</title>
 </head>
 <body>
-      <button class="bag-btn" onclick="cartQuantity += 1; 
-        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`" >Add to bag</button>
+  <p id="name-display"></p>
 
-      <button class="wish-btn" onclick="cartQuantity -= 1; 
-        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`">Move To Wishlist</button>
+  <script>
+    const myName = 'Jack';
+    document.querySelector('#name-display').innerText = myName;
 
-       <button class="bag-btn" onclick="cartQuantity += 2; 
-        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`">Add 1+1 Sale Item</button><br>
-
-      <h1 id="cart-summary"></h1>
-
-      <script>
-        let cartQuantity = 5;
-        document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`
-      </script>
+  </script>
 </body>
 </html>

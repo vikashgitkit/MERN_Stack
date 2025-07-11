@@ -10,7 +10,8 @@
 }
 
 .btn-container{
-    
+    display: flex;
+    justify-content: center;
 }
 .btn{
     width: 40px;

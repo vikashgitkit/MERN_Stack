@@ -15,16 +15,17 @@
 
     //This option is select by computer
     let randNum = Math.random()*3;
+    let computerChoice;
     if(randNum > 0 && randNum <= 1) {
-        let computerChoice = 'Bat';
-        console.log('🚀 ~ computerChoice:', computerChoice)
+        computerChoice = 'Bat';
+   
     } else if(randNum > 1 && randNum<= 2){
-        let computerChoice = 'Ball';
-        console.log('🚀 ~ computerChoice:', computerChoice)
+        computerChoice = 'Ball';
     } else{
-        let computerChoice = 'Stump';
-            console.log('🚀 ~ computerChoice:', computerChoice)
+        computerChoice = 'Stump';
     }
+    console.log('🚀 ~ computerChoice:', computerChoice)
+
 
     if(computerChoice === 'Ball'){
         console.log('User won');

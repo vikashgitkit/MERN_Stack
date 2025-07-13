@@ -13,6 +13,24 @@
 
         let randomMove = generateRandomMove();
         console.log(randomMove);
+
+        function determineDriveStatus(){
+            // let age;
+            let age = 21;
+
+            if(age === undefined){
+                return 'You are an avataar!'
+            }
+            let status;
+            if(age>18){
+              status = 'You can drive';
+            } else{
+                status="use a bicycle"
+            }
+            return status;
+        }
+        console.log(determineDriveStatus());
+        
         
     </script>
 </body>

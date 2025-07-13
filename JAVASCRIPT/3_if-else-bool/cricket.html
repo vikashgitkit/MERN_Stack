@@ -11,7 +11,7 @@
 <body>
     <h1>Bat Ball Stump Game</h1>
     <button onclick="
-    const usrChoiceMsg = 'You have chosen Bat');
+    const usrChoiceMsg = 'You have chosen Bat';
 
     //This option is select by computer
     let randNum = Math.random()*3;
@@ -27,19 +27,19 @@
    
     const computerChoiceMsg = `Computer choice is ${computerChoice}`;
 
-
+     let resultMsg;
     if(computerChoice === 'Ball'){
-        console.log('User won');
+        resultMsg='User won';
         
     }else if(computerChoice === 'Bat'){
-        console.log(`it's a tie`);
+        resultMsg=`it's a tie`;
         
     } else{
-        console.log('Computer Won');
+        resultMsg='Computer Won';
         
     }
     
-    alert
+    alert(`${usrChoiceMsg} and ${computerChoiceMsg} result is: ${resultMsg}`);
     
     ">Bat</button>
     <button>Ball</button>

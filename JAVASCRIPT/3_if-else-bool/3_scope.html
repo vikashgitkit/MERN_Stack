@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        //Var does not follow scope
+        let age = 30;
+        let usrMsg;
+        if(age>18){
+            usrMsg = 'You can drive';
+        } else{
+            usrMsg = 'Use a Bicycle';
+        }
+        console.log(usrMsg); 
+    </script>
+</body>
+</html>

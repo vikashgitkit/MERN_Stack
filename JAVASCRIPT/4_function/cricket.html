@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Cricket Game</title>
-  <style>
-    body {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1>Bat Ball Stump Game</h1>
-  <button onclick="
-  generateComputerChoice();
+  <head>
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat Ball Stump Game</h1>
+    <button
+      onclick="
+   let computerChoice=generateComputerChoice();
 
   let resultMsg;
   if (computerChoice === 'Ball') {
@@ -24,11 +25,14 @@
 
   alert(`You have chosen Bat. Computer choice is ${computerChoice} and ${resultMsg}`);
   
-  ">Bat</button>
+  "
+    >
+      Bat
+    </button>
 
-
-  <button onclick="
-  generateComputerChoice();
+    <button
+      onclick="
+   computerChoice =generateComputerChoice();
 
   if (computerChoice === 'Ball') {
     resultMsg = `It's a tie`;
@@ -40,10 +44,14 @@
 
   alert(`You have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);
   
-  ">Ball</button>
+  "
+    >
+      Ball
+    </button>
 
-  <button onclick="
-  generateComputerChoice();
+    <button
+      onclick="
+  computerChoice=generateComputerChoice();
 
   if (computerChoice === 'Ball') {
     resultMsg = 'Computer has won';
@@ -55,22 +63,26 @@
 
   alert(`You have chosen Stump. Computer choice is ${computerChoice} and ${resultMsg}`);
   
-  ">Stump</button>
+  "
+    >
+      Stump
+    </button>
 
-  <script>
-      let computerChoice; //global variable
+    <script>
+      // let computerChoice; //global variable
 
-      function generateComputerChoice(){
-  let randomNumber = Math.random() * 3;
-  if (randomNumber > 0 && randomNumber <= 1) {
-    computerChoice = 'Bat';
-    // console.log('computer choice is Bat');
-  } else if (randomNumber > 1 && randomNumber <= 2) {
-    computerChoice = 'Ball';
-  } else {
-    computerChoice = 'Stump'
-  }
+      function generateComputerChoice() {
+        // let computerChoice;
+        let randomNumber = Math.random() * 3;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          return "Bat";
+          // console.log('computer choice is Bat');
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          return "Ball";
+        } else {
+          return "Stump";
+        }
       }
-  </script>
-</body>
+    </script>
+  </body>
 </html>

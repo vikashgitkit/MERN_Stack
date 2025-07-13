@@ -16,12 +16,19 @@
         let result = age > 18 ? 'Adult' : 'Kid';
         console.log("🚀 ~ result:", result)
 
-        //Guard Operator
+        //Guard Operator: use when falsy values may come
         // let age = 32;
         let age1;
         let finalAge = age1 || 18;
         console.log(age1); //o/p->undefined
         console.log(finalAge); //o/p->18
+
+          //Default Operator: use when null and undefined values may come
+        // let age = 32;
+        let age2;
+        let finalAge1 = age2 || 18;
+        console.log(age2); //o/p->undefined
+        console.log(finalAge1); //o/p->18
         
         
     </script>

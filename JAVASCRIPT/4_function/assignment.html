@@ -23,13 +23,21 @@
 
 
         function greater(a,b){
-            if(a>b){
-                return a;
-            } else{
-                return b;
-            }
+            // if(a>b){
+            //     return a;
+            // } else{
+            //     return b;
+            // }
+            return a>b?a:b;
         }
         console.log(greater(13,22));
+
+
+        function toFahrenheit(celc){
+            return 9/5*celc+32;
+        }
+
+        console.log(toFahrenheit(38));
     </script>
 </body>
 </html>

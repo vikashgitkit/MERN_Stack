@@ -9,6 +9,7 @@
           company: 'Mango',
           price: 861,
           item_purchased: false,
+          'item-name': 'T-shirt'
         };
         console.log(typeof(product));
         console.log(product);
@@ -20,6 +21,12 @@
         
         //Another way to access objects
         console.log('Another way:', product['price']);
+        console.log('Another way:', product['item-name']);
+
+        //delete the property from object
+        delete product.company;
+        console.log(product);
+
     </script>
 </body>
 </html>

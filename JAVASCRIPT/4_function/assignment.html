@@ -5,13 +5,19 @@
 </head>
 <body>
     <script>
-        function evenOdd(a){
-            let result = a%2;
-            if(result == 0){
-                return 'Even';
-            } else {
-                return 'Odd';
-            }
+        // function evenOdd(a){
+        //     let result = a%2;
+        //     if(result == 0){
+        //         return 'Even';
+        //     } else {
+        //         return 'Odd';
+        //     }
+        // }
+
+        function evenOdd(num){
+            let rem = num % 2;
+            let isOdd = rem ==1;
+            return isOdd;
         }
         console.log(evenOdd(4));
 

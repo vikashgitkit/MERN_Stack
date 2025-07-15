@@ -42,6 +42,15 @@
             if(prod1 == prod2) {
                 return true;
             }
+
+            if(prod1.name === prod2.name &&
+                prod1.size === prod2.size &&
+                prod1.fit === prod2.fit
+            ) {
+                return true;
+            } else {
+                return false;
+            }
         }
         
         

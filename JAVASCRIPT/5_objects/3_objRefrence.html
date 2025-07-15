@@ -18,6 +18,11 @@
         console.log(`x=${x.num}, y=${y.num}`); //op-> 7,7
         x.num = 9;
         console.log(`x=${x.num}, y=${y.num}`); //op-> 9,9
+
+        //p==q false bcz both points to different memory location
+        let p = {pop: 'iujh'};
+        let q = {pop: 'iujh'};
+        console.log(p==q); //op-> false
         
     </script>
 </body>

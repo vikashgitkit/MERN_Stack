@@ -52,8 +52,26 @@
                 return false;
             }
         }
+
+        let product2 = {
+            name: 'Jeans',
+            size: 'L',
+            fit: 'Slim Fit',
+            'delivery-time': 'Same day delivery',
+        };
         
-        
+         let product3 = {
+            name: 'Jeans',
+            size: 'L',
+            fit: 'Slim Fit',
+            'delivery-time': 'Same day delivery',
+        };
+        console.log(isIdenticalProduct(product, ''));
+        console.log(isIdenticalProduct(product, product));
+        console.log(isIdenticalProduct(product3, product2));
+        console.log(isIdenticalProduct(product2, product3));
+        console.log(isIdenticalProduct(product, product2));
+
         
     </script>
 </body>

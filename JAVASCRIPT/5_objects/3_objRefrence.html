@@ -8,16 +8,16 @@
         //noraml memory management
         let a =5;
         let b =a;
-        console.log(`a=${a}, b=${b}`);
+        console.log(`a=${a}, b=${b}`);//op-> 5,5
         a = 8;
-        console.log(`a=${a}, b=${b}`);
+        console.log(`a=${a}, b=${b}`); //op-> 8,5
 
         //here x is reference of this object
         let x ={num:7};
         let y = x;
-        console.log(`x=${x.num}, y=${y.num}`);
+        console.log(`x=${x.num}, y=${y.num}`); //op-> 7,7
         x.num = 9;
-        console.log(`x=${x.num}, y=${y.num}`);
+        console.log(`x=${x.num}, y=${y.num}`); //op-> 9,9
         
     </script>
 </body>

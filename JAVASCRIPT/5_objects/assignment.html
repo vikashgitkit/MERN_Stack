@@ -33,7 +33,16 @@
         console.log(message);
         console.log(status);
         
-        
+        function isIdenticalProduct (prod1, prod2) {
+            if(typeof prod1 !== 'object' || typeof prod2 !== 'object') {
+                console.warn('Parameter passed was not an object');
+                return false;
+                
+            }
+            if(prod1 == prod2) {
+                return true;
+            }
+        }
         
         
         

@@ -5,8 +5,26 @@
 </head>
 <body>
     <script>
-        localStorage.setItem('Name', 'Steve');
-        localStorage.setItem('Age', 30);
+
+         let product = {
+            name: 'Tshirt',
+            price: 789,
+            rating:{
+                stars:4.5,
+                noOfReviews: 453,
+            },
+        } 
+        // localStorage.setItem('Name', 'Steve');
+        // localStorage.setItem('Age', 30);
+
+        // console.log(localStorage.getItem('Name'));
+
+
+        // localStorage.setItem('product', JSON.stringify(product));
+        let product2 = JSON.parse(localStorage.getItem('product'));
+        console.log(product2);
+        
+
     </script>
 </body>
 </html>

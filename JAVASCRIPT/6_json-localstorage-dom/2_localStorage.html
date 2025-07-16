@@ -21,9 +21,12 @@
 
 
         // localStorage.setItem('product', JSON.stringify(product));
-        let product2 = JSON.parse(localStorage.getItem('product'));
-        console.log(product2);
+        // let product2 = JSON.parse(localStorage.getItem('product'));
+        // console.log(product2);
         
+        //Remove item from localstorage
+        localStorage.removeItem('Age'); //this will clear single item
+        localStorage.clear();//Will clear all local storage
 
     </script>
 </body>

@@ -8,6 +8,13 @@
             width: 50px;
             font-size: 25px;
         }
+
+        .odd{
+            background-color: chocolate;
+        }
+        .even{
+            background-color: lawngreen;
+        }
     </style>
 </head>
 <body>
@@ -19,6 +26,15 @@
         function buttonPressed() {
             let button = document.querySelector('#my-button');
             noOfTimeClicked++;
+
+            if(noOfTimeClicked % 2 == 0){
+                button.classList.remove('odd');
+                button.classList.add('even');
+            } else{
+                button.classList.remove('even');
+                button.classList.add('odd');
+            }
+
             button.innerText = noOfTimeClicked;
 
         }

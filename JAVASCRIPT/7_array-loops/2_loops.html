@@ -5,52 +5,61 @@
 </head>
 <body>
     <script>
-        let num = 1;
-        while(num<=10){
-            console.log(num);
-            num++;
-        }
+        // let num = 1;
+        // while(num<=10){
+        //     console.log(num);
+        //     num++;
+        // }
 
-        //do while used when we have to execute some code before the condition means if we want that loop should execute atleast on time if the condition is false. it checks the condition after first execution
-        let num1 = 0;
-        do {
-            console.log(num1);
-            num1++
+        // //do while used when we have to execute some code before the condition means if we want that loop should execute atleast on time if the condition is false. it checks the condition after first execution
+        // let num1 = 0;
+        // do {
+        //     console.log(num1);
+        //     num1++
             
-        } while (num1<5);
+        // } while (num1<5);
 
 
-        for(let num2 = 0; num2<=10; num2++){
-            console.log(num2);
+        // for(let num2 = 0; num2<=10; num2++){
+        //     console.log(num2);
             
-        }
+        // }
 
-        let arr = [22,43,15,9,2];
-        for(let i=0; i<arr.length; i++){
-            console.log(arr[i]);
+        // let arr = [22,43,15,9,2];
+        // for(let i=0; i<arr.length; i++){
+        //     console.log(arr[i]);
             
-        }
+        // }
 
-        let sum = 0;
-        for(let i =0; i<arr.length; i++){
-            sum += arr[i];
-        }
-        console.log('Sum of array is: ' +sum);
+        // let sum = 0;
+        // for(let i =0; i<arr.length; i++){
+        //     sum += arr[i];
+        // }
+        // console.log('Sum of array is: ' +sum);
 
-        let squares = [];
-        for(let i =0; i<arr.length; i++){
-            // squares[i] = arr[i] * arr[i];
-            //Or
-            squares.push(arr[i] * arr[i]);
-        }
-        console.log(squares);
+        // let squares = [];
+        // for(let i =0; i<arr.length; i++){
+        //     // squares[i] = arr[i] * arr[i];
+        //     //Or
+        //     squares.push(arr[i] * arr[i]);
+        // }
+        // console.log(squares);
 
-        //break and continue
-        for(let num = 0; num < 50; num++) {
-            console.log(num);
-            if(num == 12){
-                break;
+        // //break and continue
+        // for(let num = 0; num < 50; num++) {
+        //     console.log(num);
+        //     if(num == 12){
+        //         break;
+        //     }
+            
+        // }
+
+        for(let num = 0; num < 10; num++) {
+            if(num == 5){
+                continue;
+                
             }
+            console.log(num);
             
         }
         

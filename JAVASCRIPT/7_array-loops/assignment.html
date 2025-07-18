@@ -35,10 +35,13 @@
         
         let num = 2;
         let i = 0;
-        while(i < 5){
+        while(true){
             if(isPrime(num)){
                 console.log(num);
                 i++;
+                if(i>=5){
+                    break;
+                }
             }
             num++;
         }

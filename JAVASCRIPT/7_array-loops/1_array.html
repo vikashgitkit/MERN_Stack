@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Array</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-           //Part1
-        // let nums = [12,44,32,18,94];
-        // console.log(nums);
-        // console.log(nums[3]);
-        // console.log(nums.length);//op-> 5
-        
+      //Part1
+      // let nums = [12,44,32,18,94];
+      // console.log(nums);
+      // console.log(nums[3]);
+      // console.log(nums.length);//op-> 5
 
-        // let nums1 = [32, true, null, 'Steve'];
-        // console.log(nums1[2]);
-        // console.log(typeof nums1);//op->object
-        
-        // console.log(Array.isArray(nums1)); //op-> True
+      // let nums1 = [32, true, null, 'Steve'];
+      // console.log(nums1[2]);
+      // console.log(typeof nums1);//op->object
 
-        //Part 2
-        let arr = [32,44,19,54];
-        console.log(arr);
-        arr.push(83);//Add element at last in array
-        console.log(arr);
-        
-        arr.pop();//remove last element from array
-        console.log(arr);
-        
-        let arr1 = [83,88,54,51];
-        arr1.shift(79);//Add element at start in array
-        console.log(arr1);
-        arr1.unshift(); //Remove first element from array
-        console.log(arr1);
-        
-        let arr2 = [43,55,90,12];
-        arr2.splice(1,2);//Deletes the elements from particular place like in this ex 1 means from index 1 deletes the 2 element so it will remove 55 and 90
-        console.log(arr2);
-        console.log(arr2.toString());//converts in string
-        arr2.sort();//sort the array
-        console.log(arr2);
+      // console.log(Array.isArray(nums1)); //op-> True
 
-        console.log(arr2.valueOf());
+      //Part 2
+      let arr = [32, 44, 19, 54];
+      console.log(arr);
+      arr.push(83); //Add element at last in array
+      console.log(arr);
 
-        let arr3 = arr2;
-        arr3[0] = 10;//this will also update the arr2 at 0 index with 10 value
-        console.log(arr2);
+      arr.pop(); //remove last element from array
+      console.log(arr);
 
-        let arrDestruct = [11,21,54,9];
-        let [a,b,c,d] = arrDestruct;//Array desctructure
-       console.log(a+ " " +b+ " " +c+ " " +d);
-        
-        
-        
-        
-        
-    </script>
+      let arr1 = [83, 88, 54, 51];
+      arr1.shift(79); //Add element at start in array
+      console.log(arr1);
+      arr1.unshift(); //Remove first element from array
+      console.log(arr1);
+
+      let arr2 = [43, 55, 90, 12];
+      arr2.splice(1, 2); //Deletes the elements from particular place like in this ex 1 means from index 1 deletes the 2 element so it will remove 55 and 90
+      console.log(arr2);
+      console.log(arr2.toString()); //converts in string
+      arr2.sort(); //sort the array
+      console.log(arr2);
+
+      console.log(arr2.valueOf());
+
+      //JavaScript me primitive data types (like numbers, strings, booleans) by value pass hote hain. Lekin objects aur arrays jaise non-primitive types by reference pass hote hain.
+
+      // By Reference Ka Matlab:Jab aap kisi object ya array ko dusri variable me assign karte ho, to uski copy nahi banti, balki usi memory location ka reference assign hota hai.
+
+      //Ab jab aap arr1[0] = 10 karte ho, to ye change usi memory location par hota hai. Aur kyunki arr bhi wahi memory point karta hai, to arr[0] bhi update ho jata hai.
+
+      //Agar Copy Chahiye Hoti to?Agar aap chahte ki arr1 ek nayi copy ho arr ki, to aapko shallow copy banani hoti:✅ 1. Using slice(): let arr1 = arr.slice();
+      //✅ 2. Using Spread Operator: let arr1 = [...arr];
+      //Ab agar arr1[0] = 10 karenge, to arr me koi change nahi hoga.
     
-</body>
+      let arr3 = arr2;
+      arr3[0] = 10; //this will also update the arr2 at 0 index with 10 value
+      console.log(arr2);
+
+      let arrDestruct = [11, 21, 54, 9];
+      let [a, b, c, d] = arrDestruct; //Array desctructure
+      console.log(a + " " + b + " " + c + " " + d);
+    </script>
+  </body>
 </html>

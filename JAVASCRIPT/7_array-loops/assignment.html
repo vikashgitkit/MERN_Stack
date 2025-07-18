@@ -13,12 +13,27 @@
         
         //Copying arr in arr1
         let arr1 = arr.slice();
+        console.log("🚀 ~ arr1:", arr1)
 
         let arr2 = [5,6,43,44,12,6,0,3];
         function getElement(arr, position){
             return arr[position -1];
         }
         console.log(getElement(arr2,5));
+
+        //Check prime number: a number that is divisible by 1 and itself
+        function isPrime(num){
+            for(let i = 2; i < num; i++){
+                if(num % i === 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(isPrime(5)); //op-> true
+        console.log(isPrime(12));//op-> false
+        
+        
         
     </script>
 </body>

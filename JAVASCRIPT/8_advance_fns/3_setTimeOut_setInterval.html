@@ -6,8 +6,12 @@
 <body>
     <script>
         let alarm = () => console.log('Hello, Good Morning!');
-        setTimeout(alarm, 5000);
-        console.log('Alarm Set');
+
+        //setTimeout returns timerId so when we need to clear the time than we can pass timerId
+       let timerId = setTimeout(alarm, 5000);
+        console.log(`Alarm Set with timerId: ${timerId}`);
+        //This will clear the time so hello good morning will never print
+        clearTimeout(timerId);
         
     </script>
 </body>

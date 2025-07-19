@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance Function</title>
+</head>
+<body>
+    <script>
+        //Anonymouse function
+        let sum = function(num1, num2) {
+            return num1 + num2;
+        }
+        
+        //Assigning refrence of sum in newsum
+        let newSum = sum;
+        console.log(sum(2,3));//op-> 5
+        console.log(newSum(4,5)); //op->9
+        
+        
+    </script>
+</body>
+</html>

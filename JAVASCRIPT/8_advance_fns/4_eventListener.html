@@ -19,7 +19,8 @@
      let printDate = event => console.log(new Date());
      btnEle.addEventListener('click', printDate);
       
-     
+     //We can also remove event listener
+     btnEle.removeEventListener('click', behaviour);
     </script>
 </body>
 </html>

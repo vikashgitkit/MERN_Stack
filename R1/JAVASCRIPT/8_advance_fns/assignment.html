@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
     <title>Assignment</title>
+    <style>
+        .btn{
+            height: 20px;
+            width: 80px;
+            font-size: 15px;
+            background-color: rgb(205, 54, 54);
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .js-size-double{
+            height: 40px;
+            width: 160px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    <button id="btn">Click me</button>
+    <!-- <button class="btn" onclick="setTimeout(doubleTheSize, 2000);">Click me</button> -->
+      <button class="btn">Click me</button>
     <script>
+
+        let btnEle = document.querySelector('.btn');
+        btnEle.addEventListener('click', event => {
+            setTimeout(doubleTheSize, 2000);
+        });
+
+        function doubleTheSize() {
+            let btnEle = document.querySelector('.btn');
+            btnEle.classList.add('js-size-double');
+        }
         let multiply = (a,b) => a * b;
         console.log(multiply(4,5));
 

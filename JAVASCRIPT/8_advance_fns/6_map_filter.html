@@ -7,13 +7,17 @@
     <script>
         //filetr takes 2 arg(1)item(value) (2)index and returns boolean but in variable it gives true value like in eve variable it will return [44, 88, 46, 0]
         let arr = [23,44,11,67,88,46,0];
+        // let eve = arr.filter((num, index) => {
+        //     if(num % 2 === 0){
+        //         return true;
+        //     } else{
+        //         return false;
+        //     }
+        // });
+        //-----------------Sorthand way--------------
         let eve = arr.filter((num, index) => {
-            if(num % 2 === 0){
-                return true;
-            } else{
-                return false;
-            }
-        });
+            return num % 2 === 0;
+        })
         console.log(eve); //op-> [44, 88, 46, 0]
         
     </script>

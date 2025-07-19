@@ -7,9 +7,20 @@
     <script>
         let arr = [43,55,21,0];
 
+        //Note: if we need to break loop in between than we can't use for each because in foreach return works like continue
         arr.forEach((num) =>{
             console.log(`num is: ${num}`);
         });
+
+         //Note: if we need to break loop in between than we can't use for each because in foreach return works like continue
+         let arr1 = [4,2,4,5,1,77,0];
+         arr1.forEach(num => {
+            if (num == 5) {
+                return;
+            }
+            console.log(`Visited:${num}`); //op-> 4,2,4,1,77,0
+            
+         })
     </script>
 </body>
 </html>

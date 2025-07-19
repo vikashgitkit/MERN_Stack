@@ -8,11 +8,18 @@
     <script>
 
      let btnEle = document.querySelector('#btn');
-    //  let behaviour = event => console.log("I am also clicked!");
-    //  btnEle.addEventListener('click', behaviour);
+    //  btnEle.addEventListener('click', event => console.log('I am clicked')
+    //  );
+   
      //----------------OR---------------
-     btnEle.addEventListener('click', event => console.log('I am clicked')
-     );
+       let behaviour = event => console.log("I am also clicked!");
+     btnEle.addEventListener('click', behaviour);
+
+     // we can also add the multiple event listener
+     let printDate = event => console.log(new Date());
+     btnEle.addEventListener('click', printDate);
+      
+     
     </script>
 </body>
 </html>

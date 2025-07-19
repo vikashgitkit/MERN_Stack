@@ -15,10 +15,19 @@
         //     }
         // });
         //-----------------Sorthand way--------------
-        let eve = arr.filter((num, index) => {
-            return num % 2 === 0;
-        })
+        // let eve = arr.filter((num, index) => {
+        //     return num % 2 === 0;
+        // });
+        //-----------------More Sorthand way--------------
+         let eve = arr.filter((num, index) =>  num % 2 === 0);
         console.log(eve); //op-> [44, 88, 46, 0]
+
+
+        //Map function takes value and return new value
+        let arr1 = [1,2,3,4,5];
+        let sqr = arr1.map(num => num * num);
+        console.log(sqr);
+        
         
     </script>
 </body>

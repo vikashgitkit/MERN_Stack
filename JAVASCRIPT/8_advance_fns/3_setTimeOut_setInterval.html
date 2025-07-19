@@ -5,13 +5,15 @@
 </head>
 <body>
     <script>
-        let alarm = () => console.log('Hello, Good Morning!');
+        let alarm = () => console.log(`Hello, Good Morning! a time is: ${new Date()}`);
 
         //setTimeout returns timerId so when we need to clear the time than we can pass timerId
-       let timerId = setTimeout(alarm, 5000);
-        console.log(`Alarm Set with timerId: ${timerId}`);
-        //This will clear the time so hello good morning will never print
-        clearTimeout(timerId);
+    //    let timerId = setTimeout(alarm, 5000);
+    //     console.log(`Alarm Set with timerId: ${timerId}`);
+    //     //This will clear the time so hello good morning will never print
+    //     clearTimeout(timerId);
+
+    setInterval(alarm,1000);
         
     </script>
 </body>

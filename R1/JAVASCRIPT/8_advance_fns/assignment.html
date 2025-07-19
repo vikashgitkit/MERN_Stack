@@ -8,6 +8,14 @@
     <script>
         let multiply = (a,b) => a * b;
         console.log(multiply(4,5));
+
+        let printGreet = () => console.log("Hello");
+        let runTwice = inputFn => {
+            inputFn();
+            inputFn();
+        }
+        runTwice(printGreet);
+        
         
         let sum = 0;
         let arr = [3,4,1,9,5];

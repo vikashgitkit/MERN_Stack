@@ -6,8 +6,11 @@
 let str = "string";
 let age = 12; //number
 let isLoggedIn = false; //boolean
-let state; //undefined: means we didn't assign the value
-let weather = null;//standalone value: means nothing get from the api or somewhere
+let state; //undefined: means we didn't assign the value. typeof is undefined
+let weather = null;//standalone value: means nothing get from the api or somewhere. typeof null is object
 //symbole: unique
+console.log(typeof null);//object
+console.log(typeof undefined);//undefined
+
 
 //Object

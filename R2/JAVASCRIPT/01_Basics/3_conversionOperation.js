@@ -17,8 +17,29 @@ const valueInNumber3 = Number(score3);
 
 //------------------------------//
 let isLoggedIn = 1
+let isLoggedIn1 = ""
+let isLoggedIn2 = "steve"
+
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn); //true
+let booleanIsLoggedIn1 = Boolean(isLoggedIn1)
+let booleanIsLoggedIn2 = Boolean(isLoggedIn2)
+
+
+// console.log(booleanIsLoggedIn); //true
+// console.log(booleanIsLoggedIn1); //false
+// console.log(booleanIsLoggedIn2); //true
+
+//---------------------------------//
+
+let someNum = 33;
+let stringNum = String(someNum);
+console.log(typeof stringNum); //string
+console.log(stringNum); //33
+
+// ******************** Operations *******************
+
+
+
 
 
 

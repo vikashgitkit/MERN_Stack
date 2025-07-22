@@ -9,5 +9,13 @@ accountEmail = "sj@gmail.com";
 accountPassword = "8833";
 accountCity = "London";
 
+/*
+Prefer not to use var 
+bcz of issue in block and functional scope
+*/
 console.log(accountId);
 console.table([accountId, accountEmail, accountPassword, accountCity]);
+//-------------------------------------//
+let accountState; //if we only declare the variable and not initialize the it returns undefined
+console.log(accountState);
+

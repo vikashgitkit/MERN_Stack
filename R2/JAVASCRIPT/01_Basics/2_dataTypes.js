@@ -12,5 +12,25 @@ let weather = null;//standalone value: means nothing get from the api or somewhe
 console.log(typeof null);//object
 console.log(typeof undefined);//undefined
 
+let id = Symbol('123')
+console.log("🚀 ~ id:", id)
+let anotherId = Symbol('123')
+console.log(id == anotherId)//false: bcz always returns unique value
+console.log(id === anotherId)//false
 
-//Object
+console.log("🚀 ~ anotherId:", anotherId)
+
+
+const bigNum = 344863487923874837257845n; //bigInt
+
+
+//non-primitive(reference types): array, object, function
+const heros = ["Iron man","hulk", "captain america"]; //array
+let myObj = {
+    name: 'steve',
+    age: 12,
+} //object
+
+let a = function() {
+    console.log("Hello Function");
+} 

@@ -1,3 +1,0 @@
--> Js official doc: https://tc39.es/ecma262/ Or you can also prefer mdn doc
-
--> 

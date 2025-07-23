@@ -36,9 +36,23 @@ let a = function() {
 } 
 
 //In js there are 2 types of memories (a) stack (b)heap
-// (a)Stack: primitive data types are stored in stack and in stack when we assign existing variable to another new variable then it creates copy of that memory so in new variable changes does not happens in old variable values. like ex below:
+// (a)Stack: primitive data types are stored in stack and in stack when we assign existing variable to another new variable then it creates copy of that memory so in new variable changes does not happens in old variable values.like ex below:
 
 let myVar = "this will be in stack";
 let newVar = myVar;
 newVar = "This update in newVar stack memory";
-console.log("MyVar is:" +myVar + "\n newVar is:" + newVar );
+console.log("MyVar is:",myVar ); //"this will be in stack";
+console.log("New Var is:",newVar);//This update in newVar stack memory
+
+
+// (b)Heap: isme non-primitive data types rehte he and ye value ki copy nhi dete ye original values de dete he memory mese.meanse ye reference de deta he. Ex:
+let userOne = {
+    email: "user1@gmail.com",
+    upi: "use@ybl",
+}
+
+let userTwo = userOne;
+userTwo.email = 'Steve@gmail.com';
+console.log("user one object is:", userOne); //op: user one object is: { email: 'Steve@gmail.com', upi: 'use@ybl' }
+console.log("user two object is:", userTwo);//op: user one object is: { email: 'Steve@gmail.com', upi: 'use@ybl' }
+

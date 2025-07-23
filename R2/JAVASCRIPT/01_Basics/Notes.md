@@ -60,4 +60,4 @@ typeof {}            // "object"
 
 ---
 
-Happy Coding! 🚀
+->Stack and Heap:

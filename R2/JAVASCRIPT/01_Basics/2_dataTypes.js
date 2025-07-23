@@ -34,3 +34,11 @@ let myObj = {
 let a = function() {
     console.log("Hello Function");
 } 
+
+//In js there are 2 types of memories (a) stack (b)heap
+// (a)Stack: primitive data types are stored in stack and in stack when we assign existing variable to another new variable then it creates copy of that memory so in new variable changes does not happens in old variable values. like ex below:
+
+let myVar = "this will be in stack";
+let newVar = myVar;
+newVar = "This update in newVar stack memory";
+console.log("MyVar is:" +myVar + "\n newVar is:" + newVar );

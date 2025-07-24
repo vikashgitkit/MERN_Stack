@@ -23,7 +23,11 @@ console.log(hundreds.toLocaleString('en-IN'));//It will return value in india ba
 
 console.log(Math);
 console.log(Math.abs(-4));//abs means absolute. It only converts -ive values in +ive. op-> 4
-console.log(Math.round(5.4));//op-> 5
+console.log(Math.round(5.6));//op-> 6
+console.log(Math.ceil(5.4));//op-> 6
+console.log(Math.floor(5.8));//op-> 5
+
+
 
 
 

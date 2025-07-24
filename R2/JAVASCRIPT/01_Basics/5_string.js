@@ -26,6 +26,10 @@ console.log(trimStr.trim());//trim remove space from start and end
 const url = 'https://steve.com/steve%20carley';
 console.log(url.replace('%20', '-')); //op: https://steve.com/steve-carley
 
+//include() method checkes that given string is available in url or not
+console.log(url.includes('good'));//false
+
+
 
 
 

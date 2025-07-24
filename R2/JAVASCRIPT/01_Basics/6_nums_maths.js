@@ -27,6 +27,15 @@ console.log(Math.round(5.6));//op-> 6
 console.log(Math.ceil(5.4));//op-> 6
 console.log(Math.floor(5.8));//op-> 5
 
+console.log(Math.min(4,5,1,7,8)); //1
+console.log(Math.max(4,5,1,7,8)); //8
+
+console.log(Math.random());//always returns random value between 0-1
+console.log((Math.random()*10) + 1);
+
+
+
+
 
 
 

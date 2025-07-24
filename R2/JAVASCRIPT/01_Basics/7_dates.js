@@ -21,7 +21,10 @@ console.log(myTimeStamp);//1753356987792
 console.log(myCreatedDate.getTime());//This will also convert time in unix timestamp so the op is: 1673654400000
 console.log(Math.floor(Date.now()/1000));
 
-
+myTimeStamp.toLocaleString('default', {
+    weekday: "long",
+    
+})
 
 
 

@@ -15,7 +15,15 @@ console.log(num.toPrecision(4));//it gives prices value and do the round off
 
 
 const hundreds = 1000000;
-console.log(hundreds.toLocaleString());//1,000,000
+console.log(hundreds.toLocaleString());//It will return default value in us basis so op:1,000,000
+
+console.log(hundreds.toLocaleString('en-IN'));//It will return value in india basis so op:10,00,000
+
+//+++++++++++++++Math Object+++++++++++++++
+
+console.log(Math);
+console.log(Math.abs(-4));//abs means absolute. It only converts -ive values in +ive. op-> 4
+console.log(Math.round(5.4));//op-> 5
 
 
 

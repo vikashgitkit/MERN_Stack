@@ -23,6 +23,11 @@ const trimStr = "    Steve    ";
 console.log(trimStr);
 console.log(trimStr.trim());//trim remove space from start and end
 
+const url = 'https://steve.com/steve%20carley';
+console.log(url.replace('%20', '-')); //op: https://steve.com/steve-carley
+
+
+
 
 
 

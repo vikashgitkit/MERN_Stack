@@ -29,6 +29,10 @@ console.log(url.replace('%20', '-')); //op: https://steve.com/steve-carley
 //include() method checkes that given string is available in url or not
 console.log(url.includes('good'));//false
 
+const str = new String('Hey-this-is-using-split-method');
+console.log(str.split('-')); //op: [ 'Hey', 'this', 'is', 'using', 'split', 'method' ]
+
+
 
 
 

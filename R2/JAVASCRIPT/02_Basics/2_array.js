@@ -8,6 +8,12 @@ const dc_heros = ["superman", "flash", "batman"];
 // console.log(marvel_heros[3][1]);//flash
 
 const newArr = marvel_heros.concat(dc_heros);
-console.log(newArr);//concat merges two array and return new array
+console.log(newArr);//concat merges two array and return new array.although we prefer spread operator(...
+
+const allNewHeros = [...marvel_heros, ...dc_heros];
+console.log(allNewHeros);
+
+
+
 
 

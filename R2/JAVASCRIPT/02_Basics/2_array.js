@@ -14,6 +14,12 @@ const allNewHeros = [...marvel_heros, ...dc_heros];
 console.log(allNewHeros);
 
 
+const arr = [2,43,1,[4,5,3],66,[34,56,[9,6,4]]];
+const arr1 = arr.flat(Infinity);
+console.log(arr1);//[2, 43,  1,  4, 5,3, 66, 34, 56, 9,6,  4]
+
+
+
 
 
 

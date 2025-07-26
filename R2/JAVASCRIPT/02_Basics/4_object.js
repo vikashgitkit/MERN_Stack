@@ -1,3 +1,4 @@
+/*
 const tinderUser = {}
 
 tinderUser.id = '123abc';
@@ -32,3 +33,18 @@ console.log(Object.values(tinderUser));//[ '123abc', 'Steve', false ]
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
+*/
+
+//object destructuring
+const course = {
+    coursename: 'js course',
+    price: '999',
+    courseInstructor: 'Steve',
+}
+
+const {courseInstructor} = course;
+console.log(courseInstructor);
+//---------OR if you see that courseInstructor is big name so let's give sort name------------//
+const {courseInstructor: instructor} = course;
+console.log(instructor);
+

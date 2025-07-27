@@ -36,3 +36,16 @@ const key2 = () => {
     
 }
 key2()
+
+const addTwo = (num1, num2) => {
+    return num1+num2;
+}
+//-----------Sorter way. jab single value return hoti he-------------
+const addTwo1 = (a, b) => a+b;
+console.log(addTwo(2,3));//5
+console.log(addTwo1(2,3));//5
+
+const addTwo2 = (a,b) => ({username: 'Steve'})//returning object
+console.log(addTwo2(2,3));//{ username: 'Steve' }
+
+

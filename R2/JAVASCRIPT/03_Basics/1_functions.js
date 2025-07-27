@@ -43,5 +43,21 @@ function handleObject (anyObject){
     
 }
 handleObject(usr)
+//-----Or you can also directly pass the object in fn------//
+handleObject({
+    username: 'sam',
+    price: 200,
+})
 
+
+//passing array as parameter in fn
+const arr = [200, 400, 100, 300];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+console.log(returnSecondValue(arr)); //400
+
+//-----Or you can also directly pass the array in fn------//
+console.log(returnSecondValue([200, 400, 100, 300]));
 

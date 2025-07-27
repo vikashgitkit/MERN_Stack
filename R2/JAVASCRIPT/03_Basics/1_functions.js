@@ -24,3 +24,24 @@ function loginUserMessage(username = 'sam'){
 // console.log(loginUserMessage('Steve'));
 console.log(loginUserMessage());
 
+//agar hme pta nhi he ki fn me kitni values aane bali he to hum rest or spread operator ka use krte he
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(111,32,566,123,432));//[ 566, 123, 432 ]
+
+
+const usr = {
+    username: "steve",
+    price: 199,
+}
+
+//pass object in function
+function handleObject (anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+handleObject(usr)
+
+

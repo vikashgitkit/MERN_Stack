@@ -1,3 +1,5 @@
+//js is single threaded 
+
 const accountId = 144523;
 let accountEmail = "steve@google.com";
 var accountPassword = "12345";

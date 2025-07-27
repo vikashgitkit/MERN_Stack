@@ -35,7 +35,7 @@ function addOne(num){
     return num + 1
 }
 
-console.log(addTwo(10)); //ReferenceError: Cannot access 'addTwo' before initialization
+//console.log(addTwo(10)); //ReferenceError: Cannot access 'addTwo' before initialization
 
 const addTwo = function(num){
     return num + 2

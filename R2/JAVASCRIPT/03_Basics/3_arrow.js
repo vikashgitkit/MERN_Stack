@@ -20,4 +20,19 @@ function key() {
     console.log(this.username);//undefined
     
 }
+
+const key1 = function() {
+    let username = "steve"
+    console.log(this.username);//undefined
+    
+}
 key()
+key1()
+
+//-------------------Arrow fn---------------//
+const key2 = () => {
+    let username = "steve"
+    console.log(this.username);//undefined
+    
+}
+key2()

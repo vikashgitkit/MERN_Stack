@@ -26,9 +26,24 @@ console.log(map); //op:
 //   'FR' => 'France'
 // }
 
-for(const key of map){
-    console.log(key); //op: [ 'IN', 'India' ]
-// [ 'US', 'United states of america' ]
-// [ 'FR', 'France' ]
+for(const [key, value] of map){
+    console.log(key, ':-', value); //op: IN :- India
+// US :- United states of america
+// FR :- France
+    
+}
+
+//for of loop will not work for object instead we need to use for in loop
+const myObj = {
+    game1: 'NFS',
+    game2: 'Spiderman',
+}
+
+// for(const [key, value] of myObj){
+//    // console.log(key, ':-', value);//will give an error
+// }
+
+for(const key in myObj){
+    console.log(`${key} is: ${myObj[key]}`);
     
 }

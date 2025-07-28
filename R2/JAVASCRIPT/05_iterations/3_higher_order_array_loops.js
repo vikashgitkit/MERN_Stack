@@ -47,3 +47,10 @@ for(const key in myObj){
     console.log(`${key} is: ${myObj[key]}`);
     
 }
+
+//fetching data from array using for in loop
+const prog = ['js', 'rb', 'py', 'java', 'cpp']
+for(const key in prog){
+    console.log(prog[key]);
+    
+}

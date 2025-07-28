@@ -65,3 +65,47 @@ coding.forEach(function (item) {
     console.log('Codings are:',item);
     
 })
+
+//or can also do using arrow fn
+coding.forEach((value) => {
+    console.log('Coding using arrow fn:', value);
+    
+})
+
+//or
+function printMe(item){
+    console.log('using fn:',item);
+    
+}
+coding.forEach(printMe)
+
+
+//instead item forEach also contains index and whole array as below ex:
+coding.forEach((item, index, arr) => {
+    console.log(item, index, arr);
+    
+})
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++//
+//Api's se hme generally res milta he as: [{},{}, {}]
+
+const myCoding = [
+    {
+        langName: "Javascript",
+        langFileName: 'js'
+    },
+     {
+        langName: "Java",
+        langFileName: 'jv'
+    },
+     {
+        langName: "Python",
+        langFileName: 'py'
+    }
+]
+
+myCoding.forEach((item) => {
+    console.log(item.langFileName);
+    
+})

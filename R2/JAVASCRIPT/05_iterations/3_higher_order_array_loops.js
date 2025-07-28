@@ -51,6 +51,17 @@ for(const key in myObj){
 //fetching data from array using for in loop
 const prog = ['js', 'rb', 'py', 'java', 'cpp']
 for(const key in prog){
-    console.log(prog[key]);
+   // console.log(prog[key]);
     
 }
+
+
+//++++++++++++++++++++++++++++++++++++++++++++//
+//forEach loop
+const coding = ['js', 'rb', 'py', 'java', 'cpp']
+
+//forEach loop ek callback fn leta he and callback fn ka naam nhi hota he
+coding.forEach(function (item) {
+    console.log('Codings are:',item);
+    
+})

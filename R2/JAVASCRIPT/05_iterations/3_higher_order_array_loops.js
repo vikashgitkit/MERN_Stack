@@ -57,7 +57,7 @@ for(const key in prog){
 
 
 //++++++++++++++++++++++++++++++++++++++++++++//
-//forEach loop
+//forEach loop. It will not return any value
 const coding = ['js', 'rb', 'py', 'java', 'cpp']
 
 //forEach loop ek callback fn leta he and callback fn ka naam nhi hota he

@@ -19,6 +19,7 @@ console.log(newNums)//[ 5, 6, 7, 8, 9, 10 ]
 
 // console.log(newNums);
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -33,6 +34,12 @@ const books = [
   ];
 
   let userBooks = books.filter((bk)=> bk.genre === "History")
+
+  let filByPublish = books.filter((bk) => {
+    return bk.publish >= 1995 && bk.genre === 'History'
+  })
+  console.log(filByPublish);
+  
 
   console.log(userBooks);
   

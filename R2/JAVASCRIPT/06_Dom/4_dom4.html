@@ -12,6 +12,7 @@
 </body>
 
 <script>
+    //this is not a optimized way to add element
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
@@ -19,6 +20,17 @@
     }
     addLanguage('Python')
     addLanguage('React')
+
+    //This is aoptimized way to add element
+    function addOptimizedLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptimizedLang('Golang')
+    addOptimizedLang('Rust')
+
 
 </script>
 </html>

@@ -40,6 +40,16 @@ function validateGuess(guess){
 }
 
 function checkGuess(guess){
+    if(guess === randNum){
+        displayMsg(`You guessed it right`)
+        endGame()
+    } else if(guess < randNum){
+        displayMsg(`Number is TOO low`)
+
+    } else if(guess > randNum){
+        displayMsg(`Number is TOO high`)
+
+    }
 
 }
 

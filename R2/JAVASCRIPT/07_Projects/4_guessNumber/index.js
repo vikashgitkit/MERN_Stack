@@ -12,3 +12,19 @@ const p = document.createElement('p');
 let prevGuess = []
 let numGuess = 1
 let playGame = true
+
+function validateGuess(guess){
+
+}
+
+function checkGuess(guess){
+
+}
+
+function displayGuess(guess){
+
+}
+
+function displayMsg(msg){
+    
+}

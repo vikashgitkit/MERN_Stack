@@ -26,5 +26,13 @@ function displayGuess(guess){
 }
 
 function displayMsg(msg){
+
+}
+
+function newGame() {
+
+}
+
+function endGame() {
     
 }

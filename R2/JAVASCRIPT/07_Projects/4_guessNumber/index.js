@@ -1,7 +1,7 @@
 const randNum = parseInt(Math.random() * 100 + 1);
 
 const submit = document.querySelector("#subt")
-const usrInput = document.querySelector('#guessField');
+const usrInput = parseInt(document.querySelector('#guessField').value);
 const guessSlot = document.querySelector('.guesses');
 const remainGuess = document.querySelector('.lastResult');
 const lowOrHi = document.querySelector('.lowOrHi')
@@ -12,6 +12,14 @@ const p = document.createElement('p');
 let prevGuess = []
 let numGuess = 1
 let playGame = true
+
+if(playGame){
+    submit.addEventListener('click', function (e) {
+        e.preventDefault();//value ko server par jane se rokta he
+        const guess = usrInput;
+        validateGuess(guess);
+    })
+}
 
 function validateGuess(guess){
 
@@ -29,10 +37,10 @@ function displayMsg(msg){
 
 }
 
-function newGame() {
+function endGame() {
 
 }
 
-function endGame() {
-    
+function newGame() {
+
 }

@@ -55,13 +55,13 @@ function checkGuess(guess){
 
 function displayGuess(guess){
     usrInput.value = ''
-    guessSlot.innerHTML += `${guess}`
+    guessSlot.innerHTML += `${guess}, `
     numGuess++;
     remainGuess.innerHTML = `${11 - numGuess}`
 }
 
 function displayMsg(msg){
-
+    lowOrHi.innerHTML = `<h2>${msg}</h2>`
 }
 
 function endGame() {

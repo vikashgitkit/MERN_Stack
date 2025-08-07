@@ -26,8 +26,15 @@
     // }
     
     //this below approach is recommended
-    document.getElementById('owl').addEventListener('click', function() {
-        alert("Owl clicked again")
-    })
+    document.getElementById('images').addEventListener('click', function(e) {
+        console.log('Clicked inside the ul');
+        
+    }, true)
+
+
+    document.getElementById('owl').addEventListener('click', function(e) {
+        console.log("owl clicked");
+        
+    }, true)
 </script>
 </html>

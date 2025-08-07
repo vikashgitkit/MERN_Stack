@@ -38,5 +38,14 @@
         e.stopPropagation()
         
     }, false)
+
+
+    //Hme google.com open nhi krna he to hum preventDefault ka use karenge
+    document.getElementById('google').addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("Google clicked");
+        
+    }, false)
 </script>
 </html>

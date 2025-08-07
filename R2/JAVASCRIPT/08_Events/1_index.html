@@ -26,15 +26,17 @@
     // }
     
     //this below approach is recommended
+    //Event propogation and bubbling
     document.getElementById('images').addEventListener('click', function(e) {
         console.log('Clicked inside the ul');
         
-    }, true)
+    }, false)
 
 
     document.getElementById('owl').addEventListener('click', function(e) {
         console.log("owl clicked");
+        e.stopPropagation()
         
-    }, true)
+    }, false)
 </script>
 </html>

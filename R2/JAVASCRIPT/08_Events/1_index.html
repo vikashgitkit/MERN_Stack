@@ -40,12 +40,23 @@
     }, false)
 
 
-    //Hme google.com open nhi krna he to hum preventDefault ka use karenge
+    //Hme google.com open nhi krna he to hum preventDefault ka use karenge and also stopping bubbling
     document.getElementById('google').addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         console.log("Google clicked");
         
     }, false)
+
+
+    //Remove images from UI
+    document.querySelector('#images').addEventListener('click', function(e) {
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode;//getting parent node which is li of the image
+        removeIt.remove();//Removing image
+        //Or
+        // removeIt.parentNode.removeChild(removeIt)
+        
+    })
 </script>
 </html>

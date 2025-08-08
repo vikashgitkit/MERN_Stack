@@ -12,10 +12,17 @@
 </body>
 
 <script>
-    const sayDate = function() {
-        console.log("Current time:", Date.now());
+    // const sayDate = function() {
+    //     console.log("Current time:", Date.now());
+        
+    // }
+    // setInterval(sayDate, 2000)
+
+    //We can also pass third parameter in setInterval function
+     const sayDate1 = function(str) {
+        console.log(`${str} Current time:`, Date.now());
         
     }
-    setInterval(sayDate, 2000)
+    setInterval(sayDate1, 2000, 'Hi')
 </script>
 </html>

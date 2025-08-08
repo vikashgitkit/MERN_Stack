@@ -15,5 +15,10 @@
         console.log("Hello set time out");
         
     }, 2000)
+
+    const changeText = function() {
+        document.querySelector('h1').innerHTML = 'Changed using setTimeOut'
+    }
+    setTimeout(changeText, 2000)
 </script>
 </html>

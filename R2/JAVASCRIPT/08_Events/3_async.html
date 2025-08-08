@@ -23,6 +23,8 @@
         console.log(`${str} Current time:`, Date.now());
         
     }
-    setInterval(sayDate1, 2000, 'Hi')
+    const intervalId = setInterval(sayDate1, 2000, 'Hi')
+
+    clearInterval(intervalId)
 </script>
 </html>

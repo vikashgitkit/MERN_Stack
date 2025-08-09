@@ -5,4 +5,14 @@ const randomColor = function() {
     for(let i = 0; i < 6; i++) {
         color += hex[Math.floor(Math.random() * 16)]
     }
+    return color;
 }
+
+const startChangingColor = function() {
+    
+}
+
+const stopChangingColor = function() {}
+
+document.querySelector('#start').addEventListener('click', startChangingColor)
+document.querySelector('#stop').addEventListener('click', stopChangingColor)

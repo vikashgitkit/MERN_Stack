@@ -7,6 +7,12 @@ const promiseOne = new Promise(function(resolve, reject) {
 
     setTimeout(function() {
         console.log('Async task is complete');
-        
+        resolve()
     }, 1000)
+})
+
+//(2)Consuming the promise
+promiseOne.then(function(){
+    console.log('Promise consumed');
+    
 })

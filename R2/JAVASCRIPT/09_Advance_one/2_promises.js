@@ -1,4 +1,4 @@
-//Promises ko create krte he and consume(using fetch) krte he)
+//Promises ko create krte he and consume(using fetch) krte he). As promises ka use hm jab krte he jab koi kaam future me hone bala ho
 
 //(1)creating promise
 const promiseOne = new Promise(function (resolve, reject) {
@@ -62,3 +62,44 @@ promiseFour
     console.log(err);
   }).finally(() => console.log("The promise is either resolved or rejected")
   )
+
+  //================================================//
+//Async/await also works similar to .then .catch
+  const promiseFive = new Promise(function(resolve, reject) {
+    setTimeout(function(){
+        let error = false
+        if (!error) {
+            resolve({username: "javascript", password: "123"})
+        } else {
+            reject('ERROR: JS went wrong')
+        }
+    }, 1000)
+  })
+
+  async function consumePromiseFive() {
+    try{
+        const res = await promiseFive
+        console.log("Response is:", res);
+        
+    } catch(err) {
+        console.log("Error:", err);
+        
+    }
+    
+  }
+  consumePromiseFive()
+
+  //=================================================//
+
+  async function getAllUsers() {
+    try{
+      const res = await fetch('https://jsonplaceholder.typicode.com/users')
+      const data = await res.json();
+      console.log("Data is:", data);
+      
+    } catch(err) {
+      console.log("Error:", err);
+      
+    }
+  }
+  getAllUsers()

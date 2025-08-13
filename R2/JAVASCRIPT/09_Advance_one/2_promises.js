@@ -103,3 +103,49 @@ promiseFour
     }
   }
   getAllUsers()
+
+  //now let's do same thing using fetch .then
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
+
+//===================================================// 
+// promise.all
+// 1. Promise.all क्या है?
+// Promise.all() JavaScript का method है जो:
+
+// एक array (या iterable) में दिए गए multiple promises को parallel में चलाता है
+
+// सिर्फ तब resolve होता है जब सारे promises resolve हो जाते हैं
+
+// अगर एक भी promise reject हो जाए, तो पूरा Promise.all() reject हो जाता है
+
+// 2. Simple समझो
+// सोचो आपके पास तीन दोस्त हैं, और आपने तीनों से पानी लाने को कहा.
+
+// Promise.all ऐसा है जैसे आप तीनों के लौटने का इंतज़ार करते हो, और फिर सबका पानी एक साथ ले लेते हो.
+
+// लेकिन अगर एक दोस्त रास्ते में गिर गया (error आ गया), तो आप बाकी का पानी भी ignore कर देते हो और कहते हो — “Mission fail”.
+//Real-life Example — API calls parallel में करना
+async function getAllData() {
+  try {
+    let [posts, users, comments] = await Promise.all([
+      fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json()),
+      fetch("https://jsonplaceholder.typicode.com/users").then(res => res.json()),
+      fetch("https://jsonplaceholder.typicode.com/comments").then(res => res.json())
+    ]);
+
+    console.log("Posts:", posts.length);
+    console.log("Users:", users.length);
+    console.log("Comments:", comments.length);
+  } catch (err) {
+    console.error("Error in fetching data:", err);
+  }
+}
+
+getAllData();

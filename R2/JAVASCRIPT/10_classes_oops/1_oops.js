@@ -13,4 +13,13 @@ const user = {
 
 console.log(user.username);
 console.log(user.getUserDetails());
+// console.log(this);
 
+
+function user(username, loginCount, isLoggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn;
+
+    return this
+}

@@ -6,5 +6,8 @@ class User {
         this.email  = email
         this.password = password
     }
-    
+
+    encryptPassword() {
+        return `${this.password}abc`
+    }
 }

@@ -10,7 +10,15 @@ class User {
     encryptPassword() {
         return `${this.password}abc`
     }
+
+    changeUsername() {
+        return `${this.username.toUpperCase()}`
+    }
 }
 
 const usr = new User("Steve", "Steve@gmail.com", 123)
 console.log("🚀 ~ usr:", usr)
+console.log(usr.encryptPassword());
+console.log(usr.changeUsername());
+
+

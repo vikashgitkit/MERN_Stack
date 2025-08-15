@@ -11,3 +11,6 @@ class User {
         return `${this.password}abc`
     }
 }
+
+const usr = new User("Steve", "Steve@gmail.com", 123)
+console.log("🚀 ~ usr:", usr)

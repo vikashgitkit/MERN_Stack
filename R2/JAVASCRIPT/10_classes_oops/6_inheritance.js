@@ -28,3 +28,5 @@ teacher.logMe()
 
 const user = new User("Alice")
 user.logMe()
+
+console.log(teacher instanceof User);

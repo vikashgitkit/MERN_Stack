@@ -21,3 +21,7 @@ class Teacher extends User{
         
     }
 }
+
+const teacher = new Teacher("Steve", "steve@gmail.com", 123)
+
+teacher.addCourse()

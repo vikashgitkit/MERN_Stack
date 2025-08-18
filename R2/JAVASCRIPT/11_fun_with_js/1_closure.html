@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closure</title>
+    <title>Closure and lexical scope</title>
 </head>
 <body>
     <script>
         function init() {
   var name = "Mozilla"; // name is a local variable created by init
+
   function displayName() {
     // displayName() is the inner function, that forms a closure
+    //leical scope
     console.log(name); // use variable declared in the parent function
   }
   displayName();

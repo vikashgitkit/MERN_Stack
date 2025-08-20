@@ -1,9 +1,11 @@
+import { Exports } from "./Export"; //if componenet is not default export then we need to import comp inside {}
 import KgButton from "./KgButton";
 
 function App() {
   return <div>
     <h1>Hello component</h1>
     <KgButton></KgButton>
+    <Exports></Exports>
   </div>
 }
 

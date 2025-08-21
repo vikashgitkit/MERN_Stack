@@ -1,14 +1,14 @@
 import './App.css'
 import AppName from './components/AppName'
-import TextComp from './components/TextComp'
-import TimeShow from './components/TimeShow'
+import ClockSlogan from './components/ClockSlogan'
+import CurrentTime from './components/CurrentTime'
 
 function App() {
 
   return <center>
   <AppName/>
-  <TextComp/>
-  <TimeShow/>
+  <ClockSlogan/>
+  <CurrentTime/>
   </center>
 }
 

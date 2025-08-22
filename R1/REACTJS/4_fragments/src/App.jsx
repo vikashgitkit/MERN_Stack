@@ -19,7 +19,7 @@ function App() {
       {/* {emptyMsg} */}
 
      <ErrorMessage/>
-     <FoodItems/>
+     <FoodItems />
     </>
   );
 }

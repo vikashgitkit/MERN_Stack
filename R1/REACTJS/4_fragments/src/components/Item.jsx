@@ -1,7 +1,7 @@
-const Item = () => {
+const Item = (props) => {
   return (
-    <li key={item} className="list-group-item">
-      {item}
+    <li key={props.foodItem} className="list-group-item">
+      {props.foodItem}
     </li>
   );
 };

@@ -4,8 +4,8 @@ import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
 
 function App() {
-  // let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
-  let foodItems = []
+  let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
+  // let foodItems = []
 
   // if(foodItems.length === 0){
   //   return <h3>I am still hungry</h3>

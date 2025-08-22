@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FoodItems from "./components/FoodItems";
 
 function App() {
   // let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
@@ -17,11 +18,7 @@ function App() {
       {/* {emptyMsg} */}
 
       {foodItems.length === 0 && <h3>I am still hungry</h3>}
-      <ul className="list-group">
-      {foodItems.map((item) => (
-        <li key={item} className="list-group-item">{item}</li>
-      ))}
-      </ul>
+     <FoodItems/>
     </>
   );
 }

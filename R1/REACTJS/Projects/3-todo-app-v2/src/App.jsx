@@ -1,7 +1,6 @@
 import AddTodo from "./components/AddTodo";
 import AppName from "./components/AppName";
 import "./App.css";
-import TodoItem from "./components/TododItem";
 import TodoItems from "./components/TodoItems";
 
 function App() {

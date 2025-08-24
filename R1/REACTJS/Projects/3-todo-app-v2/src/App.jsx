@@ -19,12 +19,8 @@ function App() {
     <center className="todo-container">
       <AppName />
       <AddTodo />
-      <TodoItems/>
+      <TodoItems todoItems={todoItems}/>
 
-      <div className="item-container">
-        <TodoItem todoDate="24/08/2025" todoName="Buy Milk" />
-        <TodoItem todoDate="25/08/2025" todoName="Go To College" />
-      </div>
     </center>
   );
 }

@@ -3,10 +3,13 @@ import styles from './App.module.css'
 function App() {
  
   return <div className={styles.calculator}>
-    <input id='display' type='text' />
+    <input className={styles.display} type='text' />
 
-    <div id='buttons-container'>
+    <div className={styles.buttonsContainer}>
       <button>C</button>
+      <button>1</button>
+      <button>2</button>
+      <button>+</button>
     </div>
   </div>
 }

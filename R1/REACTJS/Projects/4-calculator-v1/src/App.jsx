@@ -1,4 +1,5 @@
 import styles from './App.module.css'
+import ButtonsContainer from './components/ButtonsContainer'
 import Display from './components/Display'
 
 function App() {
@@ -6,12 +7,7 @@ function App() {
   return <div className={styles.calculator}>
     <Display/>
 
-    <div className={styles.buttonsContainer}>
-      <button className={styles.button}>C</button>
-      <button className={styles.button}>1</button>
-      <button className={styles.button}>2</button>
-      <button className={styles.button}>+</button>
-    </div>
+   <ButtonsContainer/>
   </div>
 }
 

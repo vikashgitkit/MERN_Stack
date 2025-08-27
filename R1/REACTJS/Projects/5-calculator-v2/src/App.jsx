@@ -6,10 +6,19 @@ import Display from "./components/Display";
 function App() {
 
   let[calVal, setCalVal] = useState('')
+
+  const onBtnClick = (buttonText)=>{
+     if(buttonText === 'C'){
+
+  } else if(buttonText === '='){
+
+  } else{
+    const newDisplayVal = calVal + buttonText
+  }
   return (
     <div className={styles.calculator}>
       <Display displayVal={calVal} />
-      <ButtonsContainer />
+      <ButtonsContainer onButtonClick={onBtnClick}/>
     </div>
   );
 }

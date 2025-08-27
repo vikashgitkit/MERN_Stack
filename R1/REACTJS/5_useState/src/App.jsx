@@ -9,9 +9,7 @@ import { useState } from "react";
 function App() {
   let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
 
-  let textStateArr = useState('Food Item Entered By User')
-  let textToShow = textStateArr[0];
-  let setTextState = textStateArr[1]
+  let [textToShow, setTextState] = useState('Food Item Entered By User')
   console.log("🚀 ~ App ~ textToShow:", textToShow)
 
 

@@ -7,15 +7,21 @@ import FoodInput from "./components/FoodInput";
 import { useState } from "react";
 
 function App() {
-  let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
+  // let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
 
-  let [textToShow, setTextState] = useState('Food Item Entered By User')
-  console.log("🚀 ~ App ~ textToShow:", textToShow)
+  // let [textToShow, setTextState] = useState('Food Item Entered By User')
 
+  let[foodItems, setFoodItems] = useState(["Dal","Salad","Ghee",])
 
-  const handleOnChange = (event) => {
-        console.log(event.target.value)
-       setTextState( event.target.value)
+  const handleOnKeyDown = (event) => {
+    if(event.key === "Enter"){
+      let newFoodItem = event.target.value
+      event.target.value = ''
+      let newItems = [...foodItems, newFoodItem]
+      setFoodItems(newItems)
+    }
+      //   console.log(event.target.value)
+      //  setTextState( event.target.value)
     }
 
   return (
@@ -23,9 +29,10 @@ function App() {
     <Container>
       <h1 className="food-heading">Healthy Foods</h1>
 
+     {/* passing fn via props */}
+     <FoodInput handleOnKeyDown = {handleOnKeyDown}/>
      <ErrorMessage items = {foodItems}/>
-     <FoodInput handleOnChange = {handleOnChange}/>
-     <p>{textToShow}</p>
+     {/* <p>{textToShow}</p> */}
      <FoodItems items = {foodItems}/>
     </Container>
 

@@ -7,6 +7,10 @@ import FoodInput from "./components/FoodInput";
 
 function App() {
   let foodItems = ["Dal","Salad","Ghee","Milk", "Curd"]
+
+  const handleOnChange = (event) => {
+        console.log(event.target.value)
+    }
   // let foodItems = []
 
   // if(foodItems.length === 0){
@@ -22,7 +26,7 @@ function App() {
       {/* {emptyMsg} */}
 
      <ErrorMessage items = {foodItems}/>
-     <FoodInput/>
+     <FoodInput handleOnChange = {handleOnChange}/>
      <FoodItems items = {foodItems}/>
     </Container>
 

@@ -1,15 +1,10 @@
 import styles from './Item.module.css'
 
 //passing fn via props(handleBuyBtn)
-const Item = ({foodItem, handleBuyBtn }) => {
+const Item = ({foodItem, bought, handleBuyBtn }) => {
 
-  const handleBuyBtnClicked = (event) => {
-    console.log("Event object is:", event);
-    
-        console.log(`${foodItem} being bought`)
-  }
   return (
-    <li className= {`${styles["kg-item"]} list-group-item`}>
+    <li className= {`${styles["kg-item"]} list-group-item ${bought && "active"}`}>
       <span className={styles["kg-span"]}>{foodItem}</span>
       <button className={`${styles.btn} btn btn-info`}
       onClick={handleBuyBtn }

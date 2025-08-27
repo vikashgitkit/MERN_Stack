@@ -1,5 +1,5 @@
 import styles from "./ButtonsContainer.module.css";
-const ButtonsContainer = ({onButtonClick}) => {
+const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
     "C",
     "1",
@@ -22,9 +22,11 @@ const ButtonsContainer = ({onButtonClick}) => {
 
   return (
     <div className={styles.buttonsContainer}>
-    {buttonNames.map((btn)=> (
-      <button className={styles.button} onClick={()=> onButtonClick(btn)}>{btn}</button>
-    ))}
+      {buttonNames.map((btn) => (
+        <button className={styles.button} onClick={() => onButtonClick(btn)}>
+          {btn}
+        </button>
+      ))}
     </div>
   );
 };

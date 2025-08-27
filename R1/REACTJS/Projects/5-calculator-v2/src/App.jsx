@@ -14,7 +14,9 @@ function App() {
 
   } else{
     const newDisplayVal = calVal + buttonText
+    setCalVal(newDisplayVal)
   }
+}
   return (
     <div className={styles.calculator}>
       <Display displayVal={calVal} />

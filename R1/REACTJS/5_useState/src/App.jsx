@@ -14,10 +14,10 @@ function App() {
   let setTextState = textStateArr[1]
   console.log("🚀 ~ App ~ textToShow:", textToShow)
 
-  
+
   const handleOnChange = (event) => {
         console.log(event.target.value)
-        textToShow = event.target.value
+       setTextState( event.target.value)
     }
 
   return (

@@ -13,6 +13,10 @@ function AddTodo({onNewItem}) {
   const handleDateChange = (event) => {
     setDueDate(event.target.value);    
   }
+
+  const handleAddButtonClicked = () => {
+    onNewItem(todoName, dueDate)
+  }
   return (
     <div className="container">
     <div className="row kg-row">
@@ -23,7 +27,7 @@ function AddTodo({onNewItem}) {
         <input className={styles.inputBox} type="date" onChange={handleDateChange}/>
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success kg-button" onClick={() => onNewItem('a', 'b')}>
+        <button type="button" className="btn btn-success kg-button" onClick={() => handleAddButtonClicked}>
           Add
         </button>
       </div>

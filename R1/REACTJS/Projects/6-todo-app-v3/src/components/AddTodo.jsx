@@ -1,5 +1,5 @@
 import styles from './AddTodo.module.css'
-function AddTodo() {
+function AddTodo({onNewItem}) {
   return (
     <div className="container">
     <div className="row kg-row">
@@ -10,7 +10,7 @@ function AddTodo() {
         <input className={styles.inputBox} type="date" />
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success kg-button">
+        <button type="button" className="btn btn-success kg-button" onClick={() => onNewItem('a', 'b')}>
           Add
         </button>
       </div>

@@ -6,11 +6,12 @@ function AddTodo({onNewItem}) {
   const [dueDate, setDueDate] = useState();
 
   const handleNameChange = (event) => {
-
+    setTodoName(event.target.value);    
+    
   }
 
   const handleDateChange = (event) => {
-
+    setDueDate(event.target.value);    
   }
   return (
     <div className="container">

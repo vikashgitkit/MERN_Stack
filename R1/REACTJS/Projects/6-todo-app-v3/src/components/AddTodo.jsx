@@ -26,10 +26,10 @@ function AddTodo({onNewItem}) {
         <input className={styles.inputBox} type="text" placeholder="Enter Todo Here" value={todoName} onChange={handleNameChange} />
       </div>
       <div className="col-4">
-        <input className={styles.inputBox} type="date" onChange={handleDateChange}/>
+        <input className={styles.inputBox} type="date"  value={dueDate} onChange={handleDateChange}/>
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success kg-button" value={dueDate} onClick={handleAddButtonClicked}>
+        <button type="button" className="btn btn-success kg-button"  onClick={handleAddButtonClicked}>
           Add
         </button>
       </div>

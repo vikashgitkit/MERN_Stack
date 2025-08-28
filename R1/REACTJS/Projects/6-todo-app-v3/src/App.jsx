@@ -17,7 +17,7 @@ function App() {
   //   },
   // ];
 
-  const [todoItems, setTodoItems] = useState("");
+  const [todoItems, setTodoItems] = useState([]);
 
   const handleNewItem = (itemName, itemDueDate) => {
     console.log(`New Item Added: ${itemName} Date: ${itemDueDate}`);
@@ -32,7 +32,7 @@ function App() {
     <center className="todo-container">
       <AppName />
       <AddTodo onNewItem={handleNewItem} />
-      {todoItems==='' ? <WelcomeMessage/> : <TodoItems todoItems={todoItems} />}
+      {todoItems.length===0 && <WelcomeMessage/>} <TodoItems todoItems={todoItems} />
       
     </center>
   );

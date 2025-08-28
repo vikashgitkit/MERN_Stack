@@ -1,5 +1,11 @@
+import { useState } from 'react';
 import styles from './AddTodo.module.css'
 function AddTodo({onNewItem}) {
+
+  const [todoName, setTodoName] = useState();
+  const [dueDate, setDueDate] = useState();
+
+  
   return (
     <div className="container">
     <div className="row kg-row">

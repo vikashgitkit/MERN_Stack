@@ -16,18 +16,20 @@ function AddTodo({onNewItem}) {
 
   const handleAddButtonClicked = () => {
     onNewItem(todoName, dueDate)
+    setTodoName('')
+    setDueDate('')
   }
   return (
     <div className="container">
     <div className="row kg-row">
       <div className="col-4">
-        <input className={styles.inputBox} type="text" placeholder="Enter Todo Here" onChange={handleNameChange} />
+        <input className={styles.inputBox} type="text" placeholder="Enter Todo Here" value={todoName} onChange={handleNameChange} />
       </div>
       <div className="col-4">
         <input className={styles.inputBox} type="date" onChange={handleDateChange}/>
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success kg-button" onClick={() => handleAddButtonClicked}>
+        <button type="button" className="btn btn-success kg-button" value={dueDate} onClick={() => handleAddButtonClicked}>
           Add
         </button>
       </div>

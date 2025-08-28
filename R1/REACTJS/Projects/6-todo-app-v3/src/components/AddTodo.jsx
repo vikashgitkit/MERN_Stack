@@ -2,8 +2,8 @@ import { useState } from 'react';
 import styles from './AddTodo.module.css'
 function AddTodo({onNewItem}) {
 
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [dueDate, setDueDate] = useState("");
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);    
@@ -15,9 +15,9 @@ function AddTodo({onNewItem}) {
   }
 
   const handleAddButtonClicked = () => {
-    onNewItem(todoName, dueDate)
-    setTodoName('')
-    setDueDate('')
+    onNewItem(todoName, dueDate);
+    setDueDate("");
+    setTodoName("");
   }
   return (
     <div className="container">
@@ -29,7 +29,7 @@ function AddTodo({onNewItem}) {
         <input className={styles.inputBox} type="date" onChange={handleDateChange}/>
       </div>
       <div className="col-2">
-        <button type="button" className="btn btn-success kg-button" value={dueDate} onClick={() => handleAddButtonClicked}>
+        <button type="button" className="btn btn-success kg-button" value={dueDate} onClick={handleAddButtonClicked}>
           Add
         </button>
       </div>

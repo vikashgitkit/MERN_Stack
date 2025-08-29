@@ -6,16 +6,6 @@ import { useState } from "react";
 import WelcomeMessage from "./components/WelcomeMessage";
 
 function App() {
-  // const initialTodoItems = [
-  //   {
-  //     name: "Buy Milk",
-  //     dueDate: "24/08/2025",
-  //   },
-  //   {
-  //     name: "Go To College",
-  //     dueDate: "24/08/2025",
-  //   },
-  // ];
 
   const [todoItems, setTodoItems] = useState([]);
 
@@ -28,6 +18,11 @@ function App() {
     ];
     setTodoItems(newTodoItems);
   };
+
+  const handleDeleteItem = (todoItemName) => {
+    console.log(`Item Deleted: ${todoItemName}`);
+    
+  }
   return (
     <center className="todo-container">
       <AppName />

@@ -5,6 +5,7 @@ function TodoItem({ todoName, todoDate, onDeleteClick }) {
   return (
     <div className="container">
       <div className="row kg-row">
+      <form action="">
         <div className="col-4">{todoName}</div>
         <div className="col-4">{todoDate}</div>
         <div className="col-2">
@@ -16,6 +17,7 @@ function TodoItem({ todoName, todoDate, onDeleteClick }) {
             <RiDeleteBin5Line />
           </button>
         </div>
+        </form>
       </div>
     </div>
   );

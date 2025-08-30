@@ -1,5 +1,8 @@
 import { useState } from "react";
 import styles from "./AddTodo.module.css";
+import { CgAdd } from "react-icons/cg";
+
+
 function AddTodo({ onNewItem }) {
   const [todoName, setTodoName] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -43,7 +46,7 @@ function AddTodo({ onNewItem }) {
             className="btn btn-success kg-button"
             onClick={handleAddButtonClicked}
           >
-            Add
+            <CgAdd />
           </button>
         </div>
       </div>

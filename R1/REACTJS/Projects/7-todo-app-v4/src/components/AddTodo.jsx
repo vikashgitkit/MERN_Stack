@@ -12,6 +12,9 @@ function AddTodo({ onNewItem }) {
     event.preventDefault();
     const todoName = todoNameEle.current.value;
     const dueDate = dueDateEle.current.value; 
+
+    todoNameEle.current.value = "";
+    dueDateEle.current.value = "";
     onNewItem(todoName, dueDate);
   };
   return (

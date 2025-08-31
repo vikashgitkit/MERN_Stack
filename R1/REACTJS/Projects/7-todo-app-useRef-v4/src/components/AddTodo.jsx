@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import styles from "./AddTodo.module.css";
 import { CgAdd } from "react-icons/cg";
 
@@ -26,7 +26,6 @@ function AddTodo({ onNewItem }) {
             ref={todoNameEle}
             type="text"
             placeholder="Enter Todo Here"
-            value={todoName}
           />
         </div>
         <div className="col-4">
@@ -34,7 +33,6 @@ function AddTodo({ onNewItem }) {
             className={styles.inputBox}
             ref={dueDateEle}
             type="date"
-            value={dueDate}
           />
         </div>
         <div className="col-2">

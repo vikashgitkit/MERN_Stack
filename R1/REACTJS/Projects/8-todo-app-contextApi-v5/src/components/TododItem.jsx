@@ -3,7 +3,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { TodoItemsContext } from "../store/todo-items-store";
 
 
-function TodoItem({ todoName, todoDate, onDeleteClick }) {
+function TodoItem({ todoName, todoDate }) {
 
   const contextObj = useContext(TodoItemsContext);
   const deleteItem = contextObj.deleteItem

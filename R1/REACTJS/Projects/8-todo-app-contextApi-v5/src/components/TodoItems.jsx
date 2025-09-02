@@ -5,7 +5,8 @@ import { TodoItemsContext } from "../store/todo-items-store";
 
 const TodoItems = ({ onDeleteClick }) => {
 
-  const todoItems = useContext(TodoItemsContext)
+  const contextObj = useContext(TodoItemsContext)
+  const todoItems = contextObj.todoItems
   return (
     <div className={styles.itemContainer}>
       {todoItems.map((item) => (

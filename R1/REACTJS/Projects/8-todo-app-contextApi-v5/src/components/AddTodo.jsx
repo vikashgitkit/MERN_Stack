@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import styles from "./AddTodo.module.css";
 import { CgAdd } from "react-icons/cg";
+import { useContext } from "react";
+import { TodoItemsContext } from "../store/todo-items-store";
 
 
 function AddTodo() {

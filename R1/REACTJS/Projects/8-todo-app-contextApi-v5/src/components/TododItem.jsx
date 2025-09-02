@@ -3,7 +3,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { TodoItemsContext } from "../store/todo-items-store";
 
 
-function TodoItem({ todoName, todoDate }) {
+function TodoItem({ todoName, todoDate, onDeleteClick }) {
 
   const contextObj = useContext(TodoItemsContext);
   const deleteItem = contextObj.deleteItem
@@ -17,7 +17,7 @@ function TodoItem({ todoName, todoDate }) {
           <button
             type="button"
             className="btn btn-danger kg-button"
-            onClick={deleteItem}
+            onClick={() => deleteItem(todoName)}
           >
             <RiDeleteBin5Line />
           </button>

@@ -3,8 +3,10 @@ import styles from "./AddTodo.module.css";
 import { CgAdd } from "react-icons/cg";
 
 
-function AddTodo({ onNewItem }) {
- 
+function AddTodo() {
+ const contextObj = useContext(TodoItemsContext)
+   const addNewItem = contextObj.addNewItem
+
   const todoNameEle = useRef();
   const dueDateEle = useRef();
 
@@ -15,7 +17,7 @@ function AddTodo({ onNewItem }) {
 
     todoNameEle.current.value = "";
     dueDateEle.current.value = "";
-    onNewItem(todoName, dueDate);
+    addNewItem(todoName, dueDate);
   };
   return (
     <div className="container">

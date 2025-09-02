@@ -32,9 +32,9 @@ function App() {
     deleteItem: deleteItem}}>
     <center className="todo-container">
       <AppName />
-      <AddTodo onNewItem={handleNewItem} />
+      <AddTodo />
       <WelcomeMessage />
-      <TodoItems onDeleteClick={handleDeleteItem} />
+      <TodoItems />
     </center>
     </TodoItemsContext.Provider>
   );

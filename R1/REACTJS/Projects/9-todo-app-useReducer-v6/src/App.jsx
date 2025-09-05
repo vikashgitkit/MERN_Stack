@@ -11,19 +11,20 @@ const todoItemsReducer = (action) => {
   return [];
 }
 function App() {
-  const [todoItems, setTodoItems] = useState([]);
-  const [newTodoItems, displayTodoItems] = useReducer()
+  // const [todoItems, setTodoItems] = useState([]);
+  const [todoItems, displayTodoItems] = useReducer(todoItemsReducer, [])
 
 
   const addNewItem = (itemName, itemDueDate) => {
 
-    setTodoItems((currValue) => {
-      const newTodoItems = [
-        ...currValue,  // old todos
-         {name: itemName, dueDate: itemDueDate} //new todos
-      ]
-      return newTodoItems
-    });
+    const newItemAction = {
+      type: "NEW_ITEM",
+      payload: {
+        itemName,
+        itemDueDate
+      }
+    }
+    displayTodoItems(newItemAction)
   };
 
   const deleteItem = (todoItemName) => {

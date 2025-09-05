@@ -1,0 +1,55 @@
+import { useRef } from "react";
+import styles from "./AddTodo.module.css";
+import { CgAdd } from "react-icons/cg";
+import { useContext } from "react";
+import { TodoItemsContext } from "../store/todo-items-store";
+
+
+function AddTodo() {
+ const contextObj = useContext(TodoItemsContext)
+   const addNewItem = contextObj.addNewItem
+
+  const todoNameEle = useRef();
+  const dueDateEle = useRef();
+
+  const handleAddButtonClicked = (event) => {
+    event.preventDefault();
+    const todoName = todoNameEle.current.value;
+    const dueDate = dueDateEle.current.value; 
+
+    todoNameEle.current.value = "";
+    dueDateEle.current.value = "";
+    addNewItem(todoName, dueDate);
+  };
+  return (
+    <div className="container">
+      <form className="row kg-row" onSubmit={handleAddButtonClicked}>
+        <div className="col-4">
+          <input
+            className={styles.inputBox}
+            ref={todoNameEle}
+            type="text"
+            placeholder="Enter Todo Here"
+          />
+        </div>
+        <div className="col-4">
+          <input
+            className={styles.inputBox}
+            ref={dueDateEle}
+            type="date"
+          />
+        </div>
+        <div className="col-2">
+          <button
+            
+            className="btn btn-success kg-button"
+          >
+            <CgAdd />
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default AddTodo;

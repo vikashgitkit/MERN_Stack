@@ -23,30 +23,7 @@ const todoItemsReducer = (currTodoItems, action) => {
 }
 function App() {
   // const [todoItems, setTodoItems] = useState([]);
-  const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, [])
-
-
-  const addNewItem = (itemName, itemDueDate) => {
-
-    const newItemAction = {
-      type: "NEW_ITEM",
-      payload: {
-        itemName,
-        itemDueDate
-      }
-    }
-    dispatchTodoItems(newItemAction)
-  };
-
-  const deleteItem = (todoItemName) => {
-    const deleteItemAction = {
-      type: "DELETE_ITEM",
-      payload: {
-        itemName: todoItemName,
-      },
-    };
-    dispatchTodoItems(deleteItemAction)
-  };
+ 
   return (
     <TodoItemsContext.Provider value={{todoItems: todoItems,
     addNewItem: addNewItem,

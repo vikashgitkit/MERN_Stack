@@ -6,6 +6,10 @@ import { useReducer, useRef, useState } from "react";
 import WelcomeMessage from "./components/WelcomeMessage";
 import { TodoItemsContext } from "./store/todo-items-store";
 
+
+const todoItemsReducer = (action) => {
+  return [];
+}
 function App() {
   const [todoItems, setTodoItems] = useState([]);
   const [newTodoItems, displayTodoItems] = useReducer()

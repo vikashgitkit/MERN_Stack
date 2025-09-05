@@ -6,7 +6,7 @@ export const TodoItemsContext = createContext({
   deleteItem: () => {},
 });
 
-const TodoItemsContextProvider = () => {
+const TodoItemsContextProvider = ({children}) => {
   const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, []);
 
   const addNewItem = (itemName, itemDueDate) => {
@@ -37,7 +37,7 @@ const TodoItemsContextProvider = () => {
         addNewItem: addNewItem,
         deleteItem: deleteItem,
       }}
-    ></TodoItemsContext.Provider>
+    >{children}</TodoItemsContext.Provider>
   );
 };
 

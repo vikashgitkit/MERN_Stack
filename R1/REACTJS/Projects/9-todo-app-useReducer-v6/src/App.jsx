@@ -4,7 +4,7 @@ import "./App.css";
 import TodoItems from "./components/TodoItems";
 import { useReducer, useRef, useState } from "react";
 import WelcomeMessage from "./components/WelcomeMessage";
-import { TodoItemsContext } from "./store/todo-items-store";
+import TodoItemsContextProvider, { TodoItemsContext } from "./store/todo-items-store";
 
 
 const todoItemsReducer = (currTodoItems, action) => {
@@ -25,16 +25,14 @@ function App() {
   // const [todoItems, setTodoItems] = useState([]);
  
   return (
-    <TodoItemsContext.Provider value={{todoItems: todoItems,
-    addNewItem: addNewItem,
-    deleteItem: deleteItem}}>
+    <TodoItemsContextProvider>
     <center className="todo-container">
       <AppName />
       <AddTodo />
       <WelcomeMessage />
       <TodoItems />
     </center>
-    </TodoItemsContext.Provider>
+    </TodoItemsContextProvider>
   );
 }
 

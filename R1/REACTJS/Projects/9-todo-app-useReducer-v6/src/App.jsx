@@ -16,7 +16,7 @@ const todoItemsReducer = (currTodoItems, action) => {
     ];
 
   } else if(action.type === 'DELETE_ITEM'){
-    newTodoItems = currTodoItems.filter((item) => item.name !== todoItemName);
+    newTodoItems = currTodoItems.filter((item) => item.name !== action.payload.itemName);
 
   }
   return newTodoItems

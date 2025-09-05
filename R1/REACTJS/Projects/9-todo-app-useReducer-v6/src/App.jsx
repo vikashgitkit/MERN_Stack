@@ -7,7 +7,12 @@ import WelcomeMessage from "./components/WelcomeMessage";
 import { TodoItemsContext } from "./store/todo-items-store";
 
 
-const todoItemsReducer = (action) => {
+const todoItemsReducer = (state, action) => {
+  if(action.type === 'NEW_ITEM'){
+
+  } else if(action.type === 'DELETE_ITEM'){
+    
+  }
   return [];
 }
 function App() {

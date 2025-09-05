@@ -1,26 +1,23 @@
 import { createContext } from "react";
 
 export const TodoItemsContext = createContext({
-    todoItems: [],
-    addNewItem: () => {},
-    deleteItem: () => {},
-})
-
+  todoItems: [],
+  addNewItem: () => {},
+  deleteItem: () => {},
+});
 
 const TodoItemsContextProvider = () => {
-     const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, [])
-
+  const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, []);
 
   const addNewItem = (itemName, itemDueDate) => {
-
     const newItemAction = {
       type: "NEW_ITEM",
       payload: {
         itemName,
-        itemDueDate
-      }
-    }
-    dispatchTodoItems(newItemAction)
+        itemDueDate,
+      },
+    };
+    dispatchTodoItems(newItemAction);
   };
 
   const deleteItem = (todoItemName) => {
@@ -30,8 +27,18 @@ const TodoItemsContextProvider = () => {
         itemName: todoItemName,
       },
     };
-    dispatchTodoItems(deleteItemAction)
+    dispatchTodoItems(deleteItemAction);
   };
-}
 
-export default TodoItemsContextProvider
+  return (
+    <TodoItemsContext.Provider
+      value={{
+        todoItems: todoItems,
+        addNewItem: addNewItem,
+        deleteItem: deleteItem,
+      }}
+    ></TodoItemsContext.Provider>
+  );
+};
+
+export default TodoItemsContextProvider;

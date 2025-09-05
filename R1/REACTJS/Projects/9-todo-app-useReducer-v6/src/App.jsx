@@ -7,11 +7,15 @@ import WelcomeMessage from "./components/WelcomeMessage";
 import { TodoItemsContext } from "./store/todo-items-store";
 
 
-const todoItemsReducer = (state, action) => {
+const todoItemsReducer = (currTodoItems, action) => {
   if(action.type === 'NEW_ITEM'){
+    const newTodoItems = [
+      ...currTodoItems,
+      { name: action.payload.itemName, dueDate: action.payload.itemDueDate}
+    ];
 
   } else if(action.type === 'DELETE_ITEM'){
-    
+
   }
   return [];
 }

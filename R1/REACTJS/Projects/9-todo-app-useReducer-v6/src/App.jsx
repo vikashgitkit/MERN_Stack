@@ -16,13 +16,14 @@ const todoItemsReducer = (currTodoItems, action) => {
     ];
 
   } else if(action.type === 'DELETE_ITEM'){
+    newTodoItems = currTodoItems.filter((item) => item.name !== todoItemName);
 
   }
   return newTodoItems
 }
 function App() {
   // const [todoItems, setTodoItems] = useState([]);
-  const [todoItems, displayTodoItems] = useReducer(todoItemsReducer, [])
+  const [todoItems, dispatchTodoItems] = useReducer(todoItemsReducer, [])
 
 
   const addNewItem = (itemName, itemDueDate) => {
@@ -34,7 +35,7 @@ function App() {
         itemDueDate
       }
     }
-    displayTodoItems(newItemAction)
+    dispatchTodoItems(newItemAction)
   };
 
   const deleteItem = (todoItemName) => {
@@ -44,7 +45,7 @@ function App() {
         itemName: todoItemName,
       },
     };
-    displayTodoItems(deleteItemAction)
+    dispatchTodoItems(deleteItemAction)
   };
   return (
     <TodoItemsContext.Provider value={{todoItems: todoItems,

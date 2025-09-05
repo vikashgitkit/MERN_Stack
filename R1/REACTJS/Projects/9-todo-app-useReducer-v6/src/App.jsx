@@ -38,9 +38,13 @@ function App() {
   };
 
   const deleteItem = (todoItemName) => {
-    console.log(`Item Deleted: ${todoItemName}`);
-    const newTodoItems = todoItems.filter((item) => item.name != todoItemName);
-    setTodoItems(newTodoItems);
+    const deleteItemAction = {
+      type: "DELETE_ITEM",
+      payload: {
+        itemName: todoItemName,
+      },
+    };
+    displayTodoItems(deleteItemAction)
   };
   return (
     <TodoItemsContext.Provider value={{todoItems: todoItems,

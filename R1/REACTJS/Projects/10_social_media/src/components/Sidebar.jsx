@@ -45,7 +45,7 @@ const Sidebar = () => {
             >
               <use xlinkHref="#speedometer2"></use>
             </svg>
-            Dashboard
+            Create Post
           </a>{" "}
         </li>{" "}
         <li>

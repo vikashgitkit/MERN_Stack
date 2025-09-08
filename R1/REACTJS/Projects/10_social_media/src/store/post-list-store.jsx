@@ -1,35 +1,40 @@
 const { createContext, useReducer } = require("react");
 
-const DEFAULT_CONTEXT = {
-    postList: [],
-    addPost: () => {},
-    deletePost: () => {},
-}
-const PostList = createContext(DEFAULT_CONTEXT);
+const PostList = createContext({
+  postList: [],
+  addPost: () => {},
+  deletePost: () => {},
+});
 
 const postListReducer = (currPostList, action) => {
-    return currPostList
-}
+  return currPostList;
+};
 
-const PostListProvider = ({children}) => {
-    const [postList, dispatchPostList] = useReducer(postListReducer, {
-        postList: [],
-        addPost,
-        deletePost,
-    })
+const PostListProvider = ({ children }) => {
+  const addPost = () => {};
 
+  const deletePost = () => {};
 
-    const addPost = () => {
+  const [postList, dispatchPostList] = useReducer(postListReducer, []);
 
-    }
+  return (
+    <PostList.Provider
+      value={{
+        postList: postList,
+        addPost: addPost,
+        deletePost: deletePost,
+      }}
+    >
+      {children}
+    </PostList.Provider>
+  );
+};
 
-    const deletePost = () => {
+const DEFAULT_POST_LIST = [{
+    id: '1',
+    title: '',
+    body: '',
+    reaction: 1
+}]
 
-    }
-    return <PostList.Provider value={{
-        postList: postList, addPost: addPost, deletePost: deletePost
-    }}>{children}</PostList.Provider>
-
-}
-
-export default PostListProvider
+export default PostListProvider;

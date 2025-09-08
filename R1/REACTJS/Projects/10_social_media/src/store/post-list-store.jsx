@@ -3,7 +3,7 @@ const { createContext } = require("react");
 const PostList = createContext({});
 
 const PostListProvider = ({children}) => {
-    return <PostList.Provider>{children}</PostList.Provider>
+    return <PostList.Provider value={[]}>{children}</PostList.Provider>
 
 }
 

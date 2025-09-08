@@ -8,8 +8,18 @@ const PostList = createContext({
 
 const PostListProvider = ({children}) => {
     const [postList, dispatchPostList] = useReducer()
-    
-    return <PostList.Provider value={[]}>{children}</PostList.Provider>
+
+
+    const addPost = () => {
+
+    }
+
+    const deletePost = () => {
+
+    }
+    return <PostList.Provider value={{
+        postList: postList, addPost: addPost, deletePost: deletePost
+    }}>{children}</PostList.Provider>
 
 }
 

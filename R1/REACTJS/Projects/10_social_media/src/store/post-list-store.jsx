@@ -12,7 +12,11 @@ const postListReducer = (currPostList, action) => {
 }
 
 const PostListProvider = ({children}) => {
-    const [postList, dispatchPostList] = useReducer(postListReducer, )
+    const [postList, dispatchPostList] = useReducer(postListReducer, {
+        postList: [],
+        addPost,
+        deletePost,
+    })
 
 
     const addPost = () => {

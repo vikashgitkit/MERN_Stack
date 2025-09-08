@@ -1,13 +1,18 @@
 const { createContext, useReducer } = require("react");
 
-const PostList = createContext({
+const DEFAULT_CONTEXT = {
     postList: [],
     addPost: () => {},
     deletePost: () => {},
-});
+}
+const PostList = createContext(DEFAULT_CONTEXT);
+
+const postListReducer = (currPostList, action) => {
+    return currPostList
+}
 
 const PostListProvider = ({children}) => {
-    const [postList, dispatchPostList] = useReducer()
+    const [postList, dispatchPostList] = useReducer(postListReducer, )
 
 
     const addPost = () => {

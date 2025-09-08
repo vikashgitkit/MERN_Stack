@@ -15,7 +15,10 @@ const PostListProvider = ({ children }) => {
 
   const deletePost = () => {};
 
-  const [postList, dispatchPostList] = useReducer(postListReducer, DEFAULT_POST_LIST);
+  const [postList, dispatchPostList] = useReducer(
+    postListReducer,
+    DEFAULT_POST_LIST
+  );
 
   return (
     <PostList.Provider
@@ -39,7 +42,7 @@ const DEFAULT_POST_LIST = [
     userId: "user-1",
     tags: ["vacation", "UK", "Enjoying"],
   },
-   {
+  {
     id: "2",
     title: "Passed",
     body: "After a lot of hard work finally we are passed in B.tech exam.",

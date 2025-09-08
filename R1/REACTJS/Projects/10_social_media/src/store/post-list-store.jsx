@@ -32,9 +32,11 @@ const PostListProvider = ({ children }) => {
 
 const DEFAULT_POST_LIST = [{
     id: '1',
-    title: '',
-    body: '',
-    reaction: 1
+    title: 'Going to UK',
+    body: 'Hi Friends, I am going to UK for my vacation. Hope to enjoy a lot. Peace out.',
+    reactions: 0,
+    userId: '',
+    tags: ['vacation', 'UK', 'Enjoying']
 }]
 
 export default PostListProvider;
